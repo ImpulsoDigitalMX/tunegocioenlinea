@@ -3,327 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ImpulsoDigitalMX | Tu Negocio en Línea</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>ImpulsoDigitalMX</title>
+
 <style>
-:root{
-  --bg:#f7f7f5;
-  --surface:#ffffff;
-  --text:#111827;
-  --muted:#5b6472;
-  --line:#e7e7e3;
-  --primary:#7b5473;
-  --primary-dark:#6a4663;
-  --blue:#2563eb;
-  --green:#1faa59;
-  --shadow:0 18px 45px rgba(17,24,39,.08);
-  --radius:22px;
-  --max:1220px;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f9fc;
+    color: #1a1a1a;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
-a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
-.container{width:min(var(--max),92%);margin:auto}
-.topbar{position:sticky;top:0;z-index:1000;background:rgba(247,247,245,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0}
-.brand{display:flex;align-items:center;gap:14px}
-.brand-logo{width:54px;height:54px;border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--line);padding:5px;box-shadow:var(--shadow)}
-.brand-text{font-weight:900;letter-spacing:-.03em;font-size:1.12rem}
-.brand-text small{display:block;color:var(--muted);font-size:.78rem;font-weight:600}
-.nav-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.nav-links a{font-weight:600;color:#3b4250}
-.nav-links a:hover{color:#000}
-.nav-cta{padding:14px 22px;border-radius:14px;background:var(--primary);color:#fff;font-weight:800}
-.nav-cta:hover{background:var(--primary-dark)}
-.hero{padding:72px 0 34px}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.86rem;font-weight:800;color:var(--primary);margin-bottom:18px}
-.eyebrow::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--primary)}
-h1{font-size:clamp(2.8rem,5.2vw,5.6rem);line-height:.95;letter-spacing:-.06em;margin-bottom:18px;max-width:760px}
-.hero h1 .accent{color:#f4ae27;font-style:italic}
-.hero p{font-size:1.18rem;color:var(--muted);max-width:780px;margin-bottom:28px}
-.hero p strong{color:#374151}
-.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:14px;font-weight:800;border:1px solid transparent;transition:.2s ease}
-.btn-primary{background:var(--primary);color:#fff}
-.btn-primary:hover{background:var(--primary-dark)}
-.btn-secondary{background:#efefed;color:var(--primary);border-color:#ececeb}
-.btn-secondary:hover{background:#e8e8e4}
-.hero-note{font-size:.98rem;color:var(--muted)}
-.hero-card{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:var(--shadow)}
-.hero-card img{border-radius:20px;border:1px solid var(--line)}
-.hero-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
-.hero-mini{padding:14px 15px;border-radius:18px;background:#fbfbfa;border:1px solid var(--line)}
-.hero-mini strong{display:block;margin-bottom:4px;font-size:.96rem}
-.hero-mini span{color:var(--muted);font-size:.92rem}
-.metrics{padding:18px 0 8px}
-.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.metric{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
-.metric strong{display:block;font-size:1.28rem;line-height:1.1;margin-bottom:10px}
-.metric span{font-size:.93rem;color:var(--muted)}
-section{padding:82px 0}
-.section-head{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:start;margin-bottom:36px}
-.section-head.single{grid-template-columns:1fr;max-width:900px}
-.tag{display:inline-block;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.79rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:12px}
-.section-head h2{font-size:clamp(2rem,3.2vw,4rem);line-height:1;letter-spacing:-.05em}
-.section-head p{font-size:1.08rem;color:var(--muted)}
-.grid{display:grid;gap:22px}
-.offer-grid,.pricing-grid,.contact-grid,.vision-grid{grid-template-columns:1fr 1fr}
-.services-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.process-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
-.card h3{font-size:1.14rem;margin-bottom:10px;letter-spacing:-.02em}
-.card p,.card li{color:var(--muted)}
-.icon{width:52px;height:52px;border-radius:16px;background:#f1eef1;color:var(--primary);display:grid;place-items:center;font-weight:900;margin-bottom:14px}
-.list{padding-left:18px;margin-top:10px}
-.service-visual{border-radius:26px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff;margin-top:18px}
-.pricing-card.featured{border-color:#dacdd7;box-shadow:0 18px 45px rgba(123,84,115,.12)}
-.price{font-size:2.2rem;font-weight:900;letter-spacing:-.05em;margin:12px 0 6px;color:var(--text)}
-.subprice{color:var(--muted);margin-bottom:14px}
-.plan-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.plan-badges span{padding:8px 12px;border-radius:999px;background:#f7f4f7;border:1px solid var(--line);font-size:.82rem;font-weight:700;color:#5d4957}
-.process-card span.step{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:var(--primary);color:#fff;font-weight:900;margin-bottom:14px}
-.cta-banner{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:center;box-shadow:var(--shadow)}
-.cta-banner h2{font-size:clamp(1.9rem,3vw,3.1rem);line-height:1.02;letter-spacing:-.04em}
-.cta-banner p{color:var(--muted);margin-top:10px}
-.contact-note{margin-top:16px;padding:16px;border-radius:18px;background:#faf8fa;border:1px solid var(--line);color:#594d56}
-.whatsapp{position:fixed;right:18px;bottom:18px;z-index:999;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#25d366,#1ebd59);color:white;font-weight:900;box-shadow:0 16px 36px rgba(37,211,102,.28)}
-footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;color:var(--muted)}
-@media (max-width:1100px){.metrics-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:980px){.hero-grid,.offer-grid,.pricing-grid,.contact-grid,.vision-grid,.cta-banner,.section-head{grid-template-columns:1fr}}
-@media (max-width:760px){.nav{align-items:flex-start;flex-direction:column}.hero{padding:52px 0 24px}.metrics-grid,.hero-card-grid{grid-template-columns:1fr}h1{font-size:2.95rem}.section-head h2{font-size:2.4rem}section{padding:64px 0}}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* BOTÓN WHATSAPP HEADER */
+.nav-cta {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero span {
+    color: #f5a623;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.cta-main {
+    margin-top: 20px;
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* BOTÓN FLOTANTE */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* SERVICIOS */
+.services {
+    padding: 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
 </style>
 </head>
+
 <body>
-<div class="topbar">
-  <div class="container nav">
-    <a href="#inicio" class="brand">
-      <div class="brand-logo">
-        <img src="ChatGPT Image 19 mar 2026, 10_45_05 a.m..png" alt="Logo ImpulsoDigitalMX">
-      </div>
-      <div class="brand-text">
-        ImpulsoDigitalMX
-        <small>Tu Negocio en Línea · Te impulsamos al mundo digital</small>
-      </div>
+
+<!-- NAV -->
+<div class="nav">
+    <div class="logo">ImpulsoDigitalMX</div>
+
+    <a class="nav-cta" href="https://wa.me/522213576025?text=Hola,%20quiero%20información%20sobre%20su%20servicio" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="18" style="margin-right:8px;">
+        WhatsApp
     </a>
-    <div class="nav-links">
-      <a href="#propuesta">Vista general</a>
-      <a href="#servicios">Funciones</a>
-      <a href="#planes">Servicios</a>
-      <a href="#contacto">Contacto</a>
-      <a class="nav-cta" href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20su%20servicio" target="_blank" rel="noopener noreferrer">Pruébalo</a>
-    </div>
-  </div>
 </div>
-<header class="hero" id="inicio">
-  <div class="container hero-grid">
-    <div>
-      <div class="eyebrow">Creador de sitios web para negocios reales</div>
-      <h1>Expande tu marca <span class="accent">en línea</span></h1>
-      <p><strong>Crea más que un sitio web y haz crecer tu negocio.</strong> En ImpulsoDigitalMX diseñamos páginas profesionales, te ayudamos a aparecer en Google Maps, dirigimos clientes a WhatsApp y convertimos tu presencia digital en una herramienta real para atraer contactos y vender más.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://wa.me/522213576025?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20para%20atraer%20m%C3%A1s%20clientes" target="_blank" rel="noopener noreferrer">Comienza ahora</a>
-        <a class="btn btn-secondary" href="#contacto">Contacta a un consultor</a>
-      </div>
-      <div class="hero-note">Setup inicial de <strong>$1,499 MXN</strong> y mantenimiento mensual desde <strong>$499 MXN</strong>. Ideal para negocios que quieren verse profesionales y generar clientes.</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Expande tu marca <span>en línea</span></h1>
+        <p>
+            Creamos páginas web que realmente generan clientes. 
+            Aparece en Google, recibe mensajes en WhatsApp y haz crecer tu negocio.
+        </p>
+
+        <a class="cta-main" href="https://wa.me/522213576025?text=Hola,%20quiero%20información%20sobre%20su%20servicio" target="_blank">
+            Hablar por WhatsApp
+        </a>
     </div>
-    <div class="hero-card">
-      <img src="ImpulsoDigitalMX_Local.png" alt="Oficina ImpulsoDigitalMX">
-      <div class="hero-card-grid">
-        <div class="hero-mini"><strong>Diseño con enfoque comercial</strong><span>Páginas que inspiran confianza y venden mejor.</span></div>
-        <div class="hero-mini"><strong>Clientes a WhatsApp</strong><span>Integramos contacto rápido y directo.</span></div>
-        <div class="hero-mini"><strong>Google Maps & SEO</strong><span>Te encuentran donde ya te están buscando.</span></div>
-        <div class="hero-mini"><strong>Seguimiento continuo</strong><span>Cambios ilimitados según tu plan contratado.</span></div>
-      </div>
-    </div>
-  </div>
-</header>
-<section class="metrics">
-  <div class="container">
-    <div class="metrics-grid">
-      <div class="metric"><strong>Más que una web</strong><span>Construimos una base digital para que tu negocio venda mejor.</span></div>
-      <div class="metric"><strong>Más clientes</strong><span>Estructuramos tu presencia para generar mensajes, llamadas y oportunidades.</span></div>
-      <div class="metric"><strong>Google & Maps</strong><span>Posicionamos tu negocio en los canales donde te buscan.</span></div>
-      <div class="metric"><strong>Mantenimiento real</strong><span>Tu sitio sigue vivo, actualizado y alineado a tu negocio.</span></div>
-    </div>
-  </div>
+
+    <img src="ImpulsoDigitalMX_Local.png" width="400">
 </section>
-<section id="propuesta">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="tag">Vista general</div>
-        <h2>La inspiración para la presencia digital que tu negocio ha estado buscando.</h2>
-      </div>
-      <div>
-        <p>En lugar de venderte solo una página, desarrollamos una solución comercial digital: imagen profesional, Google Maps, SEO local, integración a WhatsApp y acompañamiento continuo para que tu negocio destaque y convierta visitas en clientes.</p>
-      </div>
-    </div>
-    <div class="grid offer-grid">
-      <div class="card">
-        <div class="icon">01</div>
-        <h3>Presencia digital con enfoque comercial</h3>
-        <p>Creamos una página moderna y estratégica para que tu negocio no solo se vea bien, sino que también inspire confianza y facilite la venta de tus servicios o productos.</p>
-        <ul class="list">
-          <li>Diseño profesional adaptable a celular</li>
-          <li>Textos claros orientados a conversión</li>
-          <li>Imagen seria para negocios y emprendedores</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="icon">02</div>
-        <h3>Canales conectados para captar clientes</h3>
-        <p>Integramos herramientas para que quien te encuentre pueda escribirte, ubicarte o cotizarte de forma rápida, sin perder interés en el camino.</p>
-        <ul class="list">
-          <li>Google Maps y SEO local</li>
-          <li>WhatsApp Business como canal de cierre</li>
-          <li>Apoyo con campañas y visibilidad digital</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="servicios">
-  <div class="container">
-    <div class="section-head single">
-      <div>
-        <div class="tag">Funciones</div>
-        <h2>Servicios diseñados para que tu negocio destaque, se posicione y venda mejor en internet.</h2>
-        <p>Tomamos la esencia de tu propuesta original y la presentamos con una imagen más limpia, moderna y comercial para que el cliente entienda rápido el valor completo del servicio.</p>
-      </div>
-    </div>
-    <div class="grid services-grid">
-      <div class="card"><div class="icon">WEB</div><h3>Páginas web profesionales</h3><p>Diseño de sitios modernos, rápidos y optimizados para presentar tu negocio con credibilidad y facilitar la captación de prospectos.</p></div>
-      <div class="card"><div class="icon">SOC</div><h3>Redes sociales</h3><p>Apoyo en presencia digital y comunicación comercial para fortalecer tu marca y mantener contacto con tu audiencia.</p></div>
-      <div class="card"><div class="icon">ADS</div><h3>Google Ads</h3><p>Campañas orientadas a atraer visitas de personas que ya están buscando tus productos o servicios.</p></div>
-      <div class="card"><div class="icon">SEO</div><h3>SEO y Google Maps</h3><p>Optimizamos tu presencia local para que te encuentren cuando busquen un negocio como el tuyo en Google y Maps.</p></div>
-      <div class="card"><div class="icon">WSP</div><h3>Dirección a WhatsApp</h3><p>Llevamos a los clientes a conversación inmediata por WhatsApp, haciendo más fácil la atención y el cierre comercial.</p></div>
-      <div class="card"><div class="icon">MKT</div><h3>Estrategia digital comercial</h3><p>Te ayudamos a estructurar tu negocio en internet para que tu presencia digital tenga sentido, coherencia y capacidad de venta.</p></div>
-    </div>
-    <div class="service-visual">
-      <img src="ImpulsoDogitalMX_Servicios.png" alt="Servicios ImpulsoDigitalMX">
-    </div>
-  </div>
-</section>
-<section id="mision">
-  <div class="container">
-    <div class="section-head single">
-      <div>
-        <div class="tag">Misión & Visión</div>
-        <h2>Una marca creada para ayudar a negocios reales a crecer con herramientas digitales reales.</h2>
-        <p>ImpulsoDigitalMX busca posicionarse como una solución cercana, moderna y enfocada en resultados para quienes quieren entrar al mundo digital de forma práctica y profesional.</p>
-      </div>
-    </div>
-    <div class="grid vision-grid">
-      <div class="card">
-        <h3>Misión</h3>
-        <p>Impulsar a negocios, pymes y emprendedores hacia el mundo digital mediante soluciones accesibles, profesionales y orientadas a resultados, ayudándolos a atraer más clientes, fortalecer su imagen comercial y convertir internet en un canal real de crecimiento.</p>
-      </div>
-      <div class="card">
-        <h3>Visión</h3>
-        <p>Ser una marca reconocida por transformar la presencia digital de pequeños y medianos negocios en una herramienta estratégica de posicionamiento, captación y crecimiento comercial, con un servicio cercano, innovador y enfocado en el valor real para cada cliente.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="section-head single">
-      <div>
-        <div class="tag">Proceso</div>
-        <h2>Un proceso simple para activar rápido tu negocio en internet y mantenerlo evolucionando.</h2>
-        <p>La propuesta comercial está pensada para que puedas iniciar con facilidad y seguir mejorando tu página conforme tu negocio crece.</p>
-      </div>
-    </div>
-    <div class="grid process-grid">
-      <div class="card process-card"><span class="step">1</span><h3>Setup inicial</h3><p>Construimos la base digital de tu negocio: estructura, textos, contacto, WhatsApp y presentación comercial inicial.</p></div>
-      <div class="card process-card"><span class="step">2</span><h3>Publicación</h3><p>Tu página queda lista en línea para que clientes potenciales te encuentren y te contacten.</p></div>
-      <div class="card process-card"><span class="step">3</span><h3>Mantenimiento</h3><p>Realizamos cambios ilimitados por el tiempo contratado para mantener tu negocio actualizado y vigente.</p></div>
-      <div class="card process-card"><span class="step">4</span><h3>Crecimiento</h3><p>Escalamos con SEO, Google Maps, campañas, redes y nuevas mejoras para impulsar más visibilidad y más clientes.</p></div>
-    </div>
-  </div>
-</section>
-<section id="planes">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="tag">Servicios</div>
-        <h2>Una propuesta accesible para iniciar y una renta mensual para mantener tu página viva y en movimiento.</h2>
-      </div>
-      <div>
-        <p>Con este esquema no solo arrancas tu página, también aseguras seguimiento y evolución constante. Ideal para pequeños negocios que necesitan moverse rápido sin gastar de más.</p>
-      </div>
-    </div>
-    <div class="grid pricing-grid">
-      <div class="card pricing-card featured">
-        <h3>Setup inicial</h3>
-        <div class="price">$1,499 MXN</div>
-        <div class="subprice">Primer mes · Activación y publicación inicial</div>
-        <p>Incluye diseño inicial de la página, estructura comercial, integración de WhatsApp y base digital para comenzar a vender en internet.</p>
-        <div class="plan-badges"><span>Página profesional</span><span>WhatsApp integrado</span><span>Base de ventas digital</span></div>
-      </div>
-      <div class="card pricing-card">
-        <h3>Mantenimiento mensual</h3>
-        <div class="price">$499 MXN</div>
-        <div class="subprice">Cambios ilimitados por mes</div>
-        <p>Ideal para actualizar promociones, servicios, textos, imágenes y ajustes comerciales de tu negocio.</p>
-        <div class="plan-badges"><span>Contratación a 6 meses</span><span>Contratación a 1 año</span><span>Seguimiento continuo</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="cta-banner">
-      <div>
-        <h2>Tu negocio puede verse profesional, aparecer en internet y comenzar a recibir más clientes desde hoy.</h2>
-        <p>ImpulsoDigitalMX combina diseño, captación y mantenimiento para que internet sí se convierta en una herramienta real de crecimiento para tu negocio.</p>
-      </div>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20p%C3%A1gina%20web%20y%20mantenimiento" target="_blank" rel="noopener noreferrer">Solicitar información</a>
-        <a class="btn btn-secondary" href="#contacto">Hablar ahora</a>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="contacto">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="tag">Contacto</div>
-        <h2>Convirtamos tu idea en una presencia digital que sí te ayude a crecer.</h2>
-      </div>
-      <div>
-        <p>Si buscas una página que además de verse bien ayude a posicionar tu negocio, atraer clientes y llevarlos a WhatsApp, esta propuesta es para ti.</p>
-      </div>
-    </div>
-    <div class="grid contact-grid">
-      <div class="card">
-        <h3>Contacto comercial</h3>
-        <p><strong style="color:#111827;">Marca:</strong> ImpulsoDigitalMX</p>
-        <p><strong style="color:#111827;">Landing comercial:</strong> Tu Negocio en Línea</p>
-        <p><strong style="color:#111827;">WhatsApp:</strong> +52 221 357 6025</p>
-        <p><strong style="color:#111827;">Servicio:</strong> Presencia digital, posicionamiento, WhatsApp y mantenimiento web</p>
-        <div class="contact-note">Siguiente mejora recomendada: agregar testimonios, portafolio, formulario, dominio propio y automatización de seguimiento.</div>
-      </div>
-      <div class="card">
-        <h3>Acción rápida</h3>
-        <p>Da el primer paso para impulsar tu negocio en internet con una propuesta clara, accesible y enfocada en resultados.</p>
-        <div class="cta-row" style="margin-top:16px;">
-          <a class="btn btn-primary" href="https://wa.me/522213576025?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20para%20atraer%20m%C3%A1s%20clientes" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
-          <a class="btn btn-secondary" href="#inicio">Volver arriba</a>
+
+<!-- SERVICIOS -->
+<section class="services">
+    <h2>Nuestros Servicios</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Páginas Web</h3>
+            <p>Diseño profesional para atraer clientes</p>
         </div>
-      </div>
+
+        <div class="card">
+            <h3>Google Maps</h3>
+            <p>Posicionamos tu negocio local</p>
+        </div>
+
+        <div class="card">
+            <h3>WhatsApp</h3>
+            <p>Clientes directos a tu negocio</p>
+        </div>
     </div>
-  </div>
 </section>
-<footer>
-  <div class="container">© 2026 ImpulsoDigitalMX · Tu Negocio en Línea · Presencia digital para negocios que quieren crecer</div>
-</footer>
-<a class="whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20impulsar%20mi%20negocio%20en%20internet" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">W</a>
+
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/522213576025?text=Hola,%20quiero%20información%20sobre%20su%20servicio" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40">
+</a>
+
 </body>
 </html>
