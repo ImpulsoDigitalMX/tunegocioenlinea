@@ -91,9 +91,19 @@ section{padding:82px 0}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);}
 .card h3{font-size:1.14rem;margin-bottom:10px;letter-spacing:-.02em;color:#111827;}
 .card p,.card li{color:var(--muted)}
-.icon{width:52px;height:52px;border-radius:16px;background:var(--primary-soft);color:var(--primary-dark);display:grid;place-items:center;font-weight:900;margin-bottom:14px;border:1px solid #d7eef9;}
+.icon{width:52px;height:52px;border-radius:16px;background:var(--primary-soft);color:var(--primary-dark);display:grid;place-items:center;font-size:1.4rem;margin-bottom:14px;border:1px solid #d7eef9;}
 .list{padding-left:18px;margin-top:10px;}
 .service-visual{border-radius:26px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff;margin-top:18px;}
+
+/* Fix 9: secciones alternadas para mejor contraste visual */
+#propuesta{background:#ffffff;}
+#servicios{background:var(--bg);}
+#mision{background:#ffffff;}
+#proceso{background:var(--bg);}
+#opiniones{background:#ffffff;}
+#faq{background:var(--bg);}
+#cta{background:#ffffff;}
+#contacto{background:var(--bg);}
 
 /* =============================================
    NUEVA SECCIÓN DE PLANES — 3 PAQUETES
@@ -395,8 +405,13 @@ section{padding:82px 0}
 .cta-banner h2{font-size:clamp(1.9rem,3vw,3.1rem);line-height:1.02;letter-spacing:-.04em;}
 .cta-banner p{color:var(--muted);margin-top:10px;}
 
-.whatsapp{position:fixed;right:18px;bottom:18px;z-index:999;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--whatsapp),var(--whatsapp-dark));box-shadow:0 16px 36px rgba(37,211,102,.28);}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:999;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--whatsapp),var(--whatsapp-dark));box-shadow:0 16px 36px rgba(37,211,102,.28);animation:wapulse 2.2s infinite;}
 .whatsapp img{width:32px;height:32px;}
+@keyframes wapulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 16px 36px rgba(37,211,102,.28);}
+  70%{box-shadow:0 0 0 16px rgba(37,211,102,0),0 16px 36px rgba(37,211,102,.28);}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 16px 36px rgba(37,211,102,.28);}
+}
 footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;color:var(--muted);}
 
 @media(max-width:1100px){
@@ -461,7 +476,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         <a class="btn btn-primary" href="#planes">Ver planes</a>
         <a class="btn btn-secondary" href="#contacto">Contacta un consultor</a>
       </div>
-      <div class="hero-note">Ideal para negocios que quieren verse profesionales y generar clientes.</div>
+      <div class="hero-note">Setup inicial desde <strong>$1,499 MXN</strong> y mantenimiento mensual desde <strong>$499 MXN</strong>. Ideal para negocios que quieren verse profesionales y generar clientes.</div>
     </div>
     <div class="hero-card">
       <img src="ImpulsoDigitalMX_Local.png" alt="Oficina ImpulsoDigitalMX">
@@ -532,12 +547,12 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
       </div>
     </div>
     <div class="grid services-grid">
-      <div class="card"><div class="icon">WEB</div><h3>Páginas web profesionales</h3><p>Diseño de sitios modernos, rápidos y optimizados para presentar tu negocio con credibilidad y facilitar la captación de prospectos.</p></div>
-      <div class="card"><div class="icon">SOC</div><h3>Redes sociales</h3><p>Apoyo en presencia digital y comunicación comercial para fortalecer tu marca y mantener contacto con tu audiencia.</p></div>
-      <div class="card"><div class="icon">ADS</div><h3>Google Ads</h3><p>Campañas orientadas a atraer visitas de personas que ya están buscando tus productos o servicios.</p></div>
-      <div class="card"><div class="icon">SEO</div><h3>SEO y Google Maps</h3><p>Optimizamos tu presencia local para que te encuentren cuando busquen un negocio como el tuyo en Google y Maps.</p></div>
-      <div class="card"><div class="icon">WSP</div><h3>Dirección a WhatsApp</h3><p>Llevamos a los clientes a conversación inmediata por WhatsApp, haciendo más fácil la atención y el cierre comercial.</p></div>
-      <div class="card"><div class="icon">MKT</div><h3>Estrategia digital comercial</h3><p>Te ayudamos a estructurar tu negocio en internet para que tu presencia digital tenga sentido, coherencia y capacidad de venta.</p></div>
+      <div class="card"><div class="icon">🌐</div><h3>Páginas web profesionales</h3><p>Diseño de sitios modernos, rápidos y optimizados para presentar tu negocio con credibilidad y facilitar la captación de prospectos.</p></div>
+      <div class="card"><div class="icon">📱</div><h3>Redes sociales</h3><p>Apoyo en presencia digital y comunicación comercial para fortalecer tu marca y mantener contacto con tu audiencia.</p></div>
+      <div class="card"><div class="icon">🎯</div><h3>Google Ads</h3><p>Campañas orientadas a atraer visitas de personas que ya están buscando tus productos o servicios.</p></div>
+      <div class="card"><div class="icon">🔍</div><h3>SEO y Google Maps</h3><p>Optimizamos tu presencia local para que te encuentren cuando busquen un negocio como el tuyo en Google y Maps.</p></div>
+      <div class="card"><div class="icon">💬</div><h3>Dirección a WhatsApp</h3><p>Llevamos a los clientes a conversación inmediata por WhatsApp, haciendo más fácil la atención y el cierre comercial.</p></div>
+      <div class="card"><div class="icon">📊</div><h3>Estrategia digital comercial</h3><p>Te ayudamos a estructurar tu negocio en internet para que tu presencia digital tenga sentido, coherencia y capacidad de venta.</p></div>
     </div>
     <div class="service-visual">
       <img src="ImpulsoDigitalMX_Servicios.png" alt="Servicios ImpulsoDigitalMX">
@@ -750,6 +765,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
       <div>
         <div class="tag">Opiniones</div>
         <h2>Tu página no debe verse bonita nada más. Debe ayudarte a vender.</h2>
+        <p style="margin-top:12px;font-size:1.05rem;color:var(--muted);">Estos son algunos comentarios de negocios que ya dieron el paso hacia la presencia digital. Próximamente aquí estarán los testimonios reales de nuestros clientes.</p>
       </div>
     </div>
     <div class="testimonials">
@@ -807,9 +823,10 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
       <div class="card">
         <h3>Contacto comercial</h3>
         <p><strong style="color:#111827;">Marca:</strong> ImpulsoDigitalMX</p>
-        <p><strong style="color:#111827;">Landing comercial:</strong> Tu Negocio en Línea</p>
+        <p><strong style="color:#111827;">Sitio web:</strong> impulsodigitalmx.net</p>
         <p><strong style="color:#111827;">WhatsApp:</strong> +52 221 357 6025</p>
         <p><strong style="color:#111827;">Servicio:</strong> Presencia digital, posicionamiento, WhatsApp y mantenimiento web</p>
+        <p style="margin-top:10px;"><strong style="color:#111827;">📅 Atención:</strong> Lunes a Viernes · 9:00 am – 7:00 pm</p>
       </div>
       <div class="card">
         <h3>Acción rápida</h3>
@@ -826,7 +843,16 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
 </main>
 
 <footer>
-  <div class="container">© 2026 ImpulsoDigitalMX · Tu Negocio en Línea · Presencia digital para negocios que quieren crecer</div>
+  <div class="container">
+    <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:16px;">
+      <a href="#planes" style="color:var(--muted);font-weight:600;font-size:.92rem;">Planes</a>
+      <a href="#servicios" style="color:var(--muted);font-weight:600;font-size:.92rem;">Servicios</a>
+      <a href="#propuesta" style="color:var(--muted);font-weight:600;font-size:.92rem;">Vista general</a>
+      <a href="#faq" style="color:var(--muted);font-weight:600;font-size:.92rem;">Preguntas</a>
+      <a href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20ImpulsoDigitalMX" target="_blank" rel="noopener noreferrer" style="color:var(--whatsapp);font-weight:700;font-size:.92rem;">WhatsApp</a>
+    </div>
+    <div style="border-top:1px solid var(--line);padding-top:16px;">© 2026 ImpulsoDigitalMX · Tu Negocio en Línea · Presencia digital para negocios que quieren crecer</div>
+  </div>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20impulsar%20mi%20negocio%20en%20internet" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
