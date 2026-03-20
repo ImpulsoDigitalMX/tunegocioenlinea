@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ImpulsoDigitalMX: diseño web profesional, SEO local, Google Maps y WhatsApp para negocios en México desde $1,500 MXN.">
 <title>ImpulsoDigitalMX | Tu Negocio en Línea</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,134 +15,534 @@
   --text:#111827;
   --muted:#5b6472;
   --line:#e7e7e3;
-  --primary:#7b5473;
-  --primary-dark:#69455f;
+
+  /* Azul principal para la landing */
+  --primary:#0ea5e9;
+  --primary-dark:#0284c7;
+  --primary-soft:#e8f7fd;
+
+  /* Verde exclusivo para WhatsApp */
+  --whatsapp:#25D366;
+  --whatsapp-dark:#128C7E;
+  --whatsapp-soft:#eafaf1;
+
   --accent:#f4ae27;
-  --green:#25D366;
-  --green-dark:#128C7E;
+  --icon-soft:#eef8f1;
+
   --shadow:0 18px 45px rgba(17,24,39,.08);
   --radius:22px;
   --max:1220px;
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 .container{width:min(var(--max),92%);margin:auto}
-.topbar{position:sticky;top:0;z-index:1000;background:rgba(247,247,245,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0}
+
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(247,247,245,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:18px 0;
+}
+
 .brand{display:flex;align-items:center;gap:14px}
-.brand-logo{width:54px;height:54px;border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--line);padding:5px;box-shadow:var(--shadow)}
-.brand-text{font-weight:900;letter-spacing:-.03em;font-size:1.12rem}
-.brand-text small{display:block;color:var(--muted);font-size:.78rem;font-weight:600}
-.nav-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.nav-links a{font-weight:600;color:#3b4250}
+.brand-logo{
+  width:54px;
+  height:54px;
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--line);
+  padding:5px;
+  box-shadow:var(--shadow);
+}
+.brand-text{
+  font-weight:900;
+  letter-spacing:-.03em;
+  font-size:1.12rem;
+}
+.brand-text small{
+  display:block;
+  color:var(--muted);
+  font-size:.78rem;
+  font-weight:600;
+}
+
+.nav-links{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.nav-links a{
+  font-weight:600;
+  color:#3b4250;
+}
 .nav-links a:hover{color:#000}
-.nav-cta{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:999px;background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;font-weight:800;box-shadow:0 12px 28px rgba(37,211,102,.22);transition:.2s ease}
+
+.nav-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:13px 20px;
+  border-radius:999px;
+  background:linear-gradient(135deg,var(--whatsapp),var(--whatsapp-dark));
+  color:#fff;
+  font-weight:800;
+  box-shadow:0 12px 28px rgba(37,211,102,.22);
+  transition:.2s ease;
+}
 .nav-cta:hover{transform:translateY(-2px)}
 .nav-cta img{width:18px;height:18px}
+
 .hero{padding:72px 0 34px}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.86rem;font-weight:800;color:var(--primary);margin-bottom:18px}
-.eyebrow::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--primary)}
-h1{font-size:clamp(2.8rem,5.2vw,5.6rem);line-height:.95;letter-spacing:-.06em;margin-bottom:18px;max-width:760px}
-.hero h1 .accent{color:var(--accent);font-style:italic}
-.hero p{font-size:1.18rem;color:var(--muted);max-width:780px;margin-bottom:28px}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:34px;
+  align-items:center;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 14px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
+  font-size:.86rem;
+  font-weight:800;
+  color:var(--primary-dark);
+  margin-bottom:18px;
+}
+.eyebrow::before{
+  content:"";
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:var(--primary);
+}
+
+h1{
+  font-size:clamp(2.8rem,5.2vw,5.6rem);
+  line-height:.95;
+  letter-spacing:-.06em;
+  margin-bottom:18px;
+  max-width:760px;
+}
+.hero h1 .accent{
+  color:var(--accent);
+  font-style:italic;
+}
+.hero p{
+  font-size:1.18rem;
+  color:var(--muted);
+  max-width:780px;
+  margin-bottom:28px;
+}
 .hero p strong{color:#374151}
-.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:14px;font-weight:800;border:1px solid transparent;transition:.2s ease}
-.btn-primary{background:var(--primary);color:#fff}
-.btn-primary:hover{background:var(--primary-dark)}
-.btn-secondary{background:#efefed;color:var(--primary);border-color:#ececeb}
+
+.cta-row{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:56px;
+  padding:0 24px;
+  border-radius:14px;
+  font-weight:800;
+  border:1px solid transparent;
+  transition:.2s ease;
+}
+
+.btn-primary{
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff;
+  box-shadow:0 12px 28px rgba(14,165,233,.18);
+}
+.btn-primary:hover{
+  transform:translateY(-1px);
+  box-shadow:0 16px 32px rgba(14,165,233,.24);
+}
+
+.btn-secondary{
+  background:#efefed;
+  color:var(--primary-dark);
+  border-color:#ececeb;
+}
 .btn-secondary:hover{background:#e8e8e4}
-.hero-note{font-size:.98rem;color:var(--muted)}
-.hero-card{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:var(--shadow)}
-.hero-card img{border-radius:20px;border:1px solid var(--line)}
-.hero-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
-.hero-mini{padding:14px 15px;border-radius:18px;background:#fbfbfa;border:1px solid var(--line)}
-.hero-mini strong{display:block;margin-bottom:4px;font-size:.96rem}
-.hero-mini span{color:var(--muted);font-size:.92rem}
+
+.btn-whatsapp{
+  background:linear-gradient(135deg,var(--whatsapp),var(--whatsapp-dark));
+  color:#fff;
+  box-shadow:0 12px 28px rgba(37,211,102,.18);
+}
+.btn-whatsapp:hover{
+  transform:translateY(-1px);
+  box-shadow:0 16px 32px rgba(37,211,102,.24);
+}
+
+.hero-note{
+  font-size:.98rem;
+  color:var(--muted);
+}
+
+.hero-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:var(--shadow);
+}
+.hero-card img{
+  border-radius:20px;
+  border:1px solid var(--line);
+}
+.hero-card-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:14px;
+}
+.hero-mini{
+  padding:14px 15px;
+  border-radius:18px;
+  background:#fbfbfa;
+  border:1px solid var(--line);
+}
+.hero-mini strong{
+  display:block;
+  margin-bottom:4px;
+  font-size:.96rem;
+  color:#1f2937;
+}
+.hero-mini span{
+  color:var(--muted);
+  font-size:.92rem;
+}
+
 .metrics{padding:18px 0 8px}
-.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.metric{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
-.metric strong{display:block;font-size:1.28rem;line-height:1.1;margin-bottom:10px}
-.metric span{font-size:.93rem;color:var(--muted)}
+.metrics-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.metric{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:22px;
+  box-shadow:var(--shadow);
+}
+.metric strong{
+  display:block;
+  font-size:1.28rem;
+  line-height:1.1;
+  margin-bottom:10px;
+  color:#111827;
+}
+.metric span{
+  font-size:.93rem;
+  color:var(--muted);
+}
+
 section{padding:82px 0}
-.section-head{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:start;margin-bottom:36px}
-.section-head.single{grid-template-columns:1fr;max-width:900px}
-.tag{display:inline-block;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.79rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:12px}
-.section-head h2{font-size:clamp(2rem,3.2vw,4rem);line-height:1;letter-spacing:-.05em}
-.section-head p{font-size:1.08rem;color:var(--muted)}
+
+.section-head{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:26px;
+  align-items:start;
+  margin-bottom:36px;
+}
+.section-head.single{
+  grid-template-columns:1fr;
+  max-width:900px;
+}
+.tag{
+  display:inline-block;
+  padding:7px 13px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
+  font-size:.79rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--primary-dark);
+  margin-bottom:12px;
+}
+.section-head h2{
+  font-size:clamp(2rem,3.2vw,4rem);
+  line-height:1;
+  letter-spacing:-.05em;
+}
+.section-head p{
+  font-size:1.08rem;
+  color:var(--muted);
+}
+
 .grid{display:grid;gap:22px}
-.offer-grid,.pricing-grid,.contact-grid,.vision-grid,.faq-grid{grid-template-columns:1fr 1fr}
-.services-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.process-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
-.card h3{font-size:1.14rem;margin-bottom:10px;letter-spacing:-.02em}
+.offer-grid,.pricing-grid,.contact-grid,.vision-grid,.faq-grid{
+  grid-template-columns:1fr 1fr;
+}
+.services-grid{
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+.process-grid{
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:26px;
+  box-shadow:var(--shadow);
+}
+.card h3{
+  font-size:1.14rem;
+  margin-bottom:10px;
+  letter-spacing:-.02em;
+  color:#111827;
+}
 .card p,.card li{color:var(--muted)}
-.icon{width:52px;height:52px;border-radius:16px;background:#f1eef1;color:var(--primary);display:grid;place-items:center;font-weight:900;margin-bottom:14px}
-.list{padding-left:18px;margin-top:10px}
-.service-visual{border-radius:26px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff;margin-top:18px}
-.pricing-card.featured{border-color:#dacdd7;box-shadow:0 18px 45px rgba(123,84,115,.12)}
-.price{font-size:2.2rem;font-weight:900;letter-spacing:-.05em;margin:12px 0 6px;color:var(--text)}
-.subprice{color:var(--muted);margin-bottom:14px}
-.plan-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.plan-badges span{padding:8px 12px;border-radius:999px;background:#f7f4f7;border:1px solid var(--line);font-size:.82rem;font-weight:700;color:#5d4957}
-.process-card span.step{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:var(--primary);color:#fff;font-weight:900;margin-bottom:14px}
-.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.quote{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
-.quote strong{display:block;margin-top:14px}
-.quote span{color:var(--muted);font-size:.93rem}
-.faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
-.faq-item h3{font-size:1.02rem;margin-bottom:8px}
-.cta-banner{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:center;box-shadow:var(--shadow)}
-.cta-banner h2{font-size:clamp(1.9rem,3vw,3.1rem);line-height:1.02;letter-spacing:-.04em}
-.cta-banner p{color:var(--muted);margin-top:10px}
-.contact-note{margin-top:16px;padding:16px;border-radius:18px;background:#faf8fa;border:1px solid var(--line);color:#594d56}
-.whatsapp{position:fixed;right:18px;bottom:18px;z-index:999;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),var(--green-dark));box-shadow:0 16px 36px rgba(37,211,102,.28)}
-.whatsapp img{width:32px;height:32px}
-footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;color:var(--muted)}
-@media (max-width:1100px){.metrics-grid,.testimonials{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:980px){.hero-grid,.offer-grid,.pricing-grid,.contact-grid,.vision-grid,.cta-banner,.section-head,.faq-grid{grid-template-columns:1fr}}
-@media (max-width:760px){.nav{align-items:flex-start;flex-direction:column}.hero{padding:52px 0 24px}.metrics-grid,.hero-card-grid,.testimonials{grid-template-columns:1fr}h1{font-size:2.95rem}.section-head h2{font-size:2.4rem}section{padding:64px 0}}
+
+.icon{
+  width:52px;
+  height:52px;
+  border-radius:16px;
+  background:var(--primary-soft);
+  color:var(--primary-dark);
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  margin-bottom:14px;
+  border:1px solid #d7eef9;
+}
+
+.list{
+  padding-left:18px;
+  margin-top:10px;
+}
+
+.service-visual{
+  border-radius:26px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  background:#fff;
+  margin-top:18px;
+}
+
+.pricing-card.featured{
+  border-color:#cfe7f5;
+  box-shadow:0 18px 45px rgba(14,165,233,.10);
+}
+.price{
+  font-size:2.2rem;
+  font-weight:900;
+  letter-spacing:-.05em;
+  margin:12px 0 6px;
+  color:var(--text);
+}
+.subprice{
+  color:var(--muted);
+  margin-bottom:14px;
+}
+.plan-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:16px;
+}
+.plan-badges span{
+  padding:8px 12px;
+  border-radius:999px;
+  background:var(--primary-soft);
+  border:1px solid #d7eef9;
+  font-size:.82rem;
+  font-weight:700;
+  color:var(--primary-dark);
+}
+
+.process-card span.step{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff;
+  font-weight:900;
+  margin-bottom:14px;
+}
+
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.quote{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:24px;
+  box-shadow:var(--shadow);
+}
+.quote strong{
+  display:block;
+  margin-top:14px;
+  color:#111827;
+}
+.quote span{
+  color:var(--muted);
+  font-size:.93rem;
+}
+
+.faq-item{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:22px;
+  box-shadow:var(--shadow);
+}
+.faq-item h3{
+  font-size:1.02rem;
+  margin-bottom:8px;
+  color:#111827;
+}
+
+.cta-banner{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:30px;
+  padding:34px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:22px;
+  align-items:center;
+  box-shadow:var(--shadow);
+}
+.cta-banner h2{
+  font-size:clamp(1.9rem,3vw,3.1rem);
+  line-height:1.02;
+  letter-spacing:-.04em;
+}
+.cta-banner p{
+  color:var(--muted);
+  margin-top:10px;
+}
+
+.whatsapp{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:999;
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,var(--whatsapp),var(--whatsapp-dark));
+  box-shadow:0 16px 36px rgba(37,211,102,.28);
+}
+.whatsapp img{
+  width:32px;
+  height:32px;
+}
+
+footer{
+  padding:28px 0 42px;
+  border-top:1px solid var(--line);
+  text-align:center;
+  color:var(--muted);
+}
+
+@media (max-width:1100px){
+  .metrics-grid,.testimonials{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:980px){
+  .hero-grid,.offer-grid,.pricing-grid,.contact-grid,.vision-grid,.cta-banner,.section-head,.faq-grid{
+    grid-template-columns:1fr
+  }
+}
+@media (max-width:760px){
+  .nav{align-items:flex-start;flex-direction:column}
+  .hero{padding:52px 0 24px}
+  .metrics-grid,.hero-card-grid,.testimonials{grid-template-columns:1fr}
+  h1{font-size:2.95rem}
+  .section-head h2{font-size:2.4rem}
+  section{padding:64px 0}
+}
 </style>
 </head>
 <body>
-<div class="topbar">
-  <div class="container nav">
-    <a href="#inicio" class="brand">
-      <div class="brand-logo">
-        <img src="ChatGPT Image 19 mar 2026, 10_45_05 a.m..png" alt="Logo ImpulsoDigitalMX">
-      </div>
-      <div class="brand-text">
-        ImpulsoDigitalMX
-        <small>Tu Negocio en Línea · Te impulsamos al mundo digital</small>
-      </div>
-    </a>
-    <div class="nav-links">
-      <a href="#propuesta">Vista general</a>
-      <a href="#servicios">Funciones</a>
-      <a href="#planes">Servicios</a>
-      <a href="#faq">Preguntas</a>
-      <a class="nav-cta" href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20su%20servicio" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        WhatsApp
+
+<!-- FIX #4: Header semántico envuelve la barra de navegación -->
+<header>
+  <div class="topbar">
+    <div class="container nav">
+      <a href="#inicio" class="brand">
+        <div class="brand-logo">
+          <img src="ChatGPT Image 19 mar 2026, 10_45_05 a.m..png" alt="Logo ImpulsoDigitalMX">
+        </div>
+        <div class="brand-text">
+          ImpulsoDigitalMX
+          <small>Tu Negocio en Línea · Te impulsamos al mundo digital</small>
+        </div>
       </a>
+      <div class="nav-links">
+        <a href="#propuesta">Vista general</a>
+        <a href="#servicios">Funciones</a>
+        <!-- FIX #2: Texto del nav alineado con el id real de la sección -->
+        <a href="#planes">Planes</a>
+        <a href="#faq">Preguntas</a>
+        <a class="nav-cta" href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20su%20servicio" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+          WhatsApp
+        </a>
+      </div>
     </div>
   </div>
-</div>
-<header class="hero" id="inicio">
+</header>
+
+<!-- FIX #4: <main> envuelve el contenido principal -->
+<main>
+
+<section class="hero" id="inicio">
   <div class="container hero-grid">
     <div>
       <div class="eyebrow">Creador de sitios web para negocios reales</div>
       <h1>Expande tu marca <span class="accent">en línea</span></h1>
       <p><strong>Crea más que un sitio web y haz crecer tu negocio.</strong> En ImpulsoDigitalMX diseñamos páginas profesionales, te ayudamos a aparecer en Google Maps, dirigimos clientes a WhatsApp y convertimos tu presencia digital en una herramienta real para atraer contactos y vender más.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://wa.me/522213576025?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20para%20atraer%20m%C3%A1s%20clientes" target="_blank" rel="noopener noreferrer">Comienza ahora</a>
+        <a class="btn btn-primary" href="#planes">Comienza ahora</a>
         <a class="btn btn-secondary" href="#contacto">Contacta a un consultor</a>
       </div>
-      </div>
+      <div class="hero-note">Setup inicial de <strong>$1,500 MXN</strong> y mantenimiento mensual desde <strong>$499 MXN</strong>. Ideal para negocios que quieren verse profesionales y generar clientes.</div>
+    </div>
     <div class="hero-card">
       <img src="ImpulsoDigitalMX_Local.png" alt="Oficina ImpulsoDigitalMX">
       <div class="hero-card-grid">
@@ -152,7 +553,8 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
       </div>
     </div>
   </div>
-</header>
+</section>
+
 <section class="metrics">
   <div class="container">
     <div class="metrics-grid">
@@ -163,6 +565,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
     </div>
   </div>
 </section>
+
 <section id="propuesta">
   <div class="container">
     <div class="section-head">
@@ -198,6 +601,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
     </div>
   </div>
 </section>
+
 <section id="servicios">
   <div class="container">
     <div class="section-head single">
@@ -216,10 +620,12 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
       <div class="card"><div class="icon">MKT</div><h3>Estrategia digital comercial</h3><p>Te ayudamos a estructurar tu negocio en internet para que tu presencia digital tenga sentido, coherencia y capacidad de venta.</p></div>
     </div>
     <div class="service-visual">
-      <img src="ImpulsoDogitalMX_Servicios.png" alt="Servicios ImpulsoDigitalMX">
+      <!-- FIX #1: Corregido typo "ImpulsoDogitalMX" → "ImpulsoDigitalMX" -->
+      <img src="ImpulsoDigitalMX_Servicios.png" alt="Servicios ImpulsoDigitalMX">
     </div>
   </div>
 </section>
+
 <section id="mision">
   <div class="container">
     <div class="section-head single">
@@ -241,7 +647,9 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
     </div>
   </div>
 </section>
-<section>
+
+<!-- FIX #3: Sección de Proceso con id para que sea enlazable -->
+<section id="proceso">
   <div class="container">
     <div class="section-head single">
       <div>
@@ -258,6 +666,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
     </div>
   </div>
 </section>
+
 <section id="planes">
   <div class="container">
     <div class="section-head">
@@ -272,7 +681,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
     <div class="grid pricing-grid">
       <div class="card pricing-card featured">
         <h3>Setup inicial</h3>
-        <div class="price">$1,499 MXN</div>
+        <div class="price">$1,500 MXN</div>
         <div class="subprice">Primer mes · Activación y publicación inicial</div>
         <p>Incluye diseño inicial de la página, estructura comercial, integración de WhatsApp y base digital para comenzar a vender en internet.</p>
         <div class="plan-badges"><span>Página profesional</span><span>WhatsApp integrado</span><span>Base de ventas digital</span></div>
@@ -287,22 +696,24 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
     </div>
   </div>
 </section>
-<section>
+
+<!-- FIX #3: Sección de Testimonios con id -->
+<section id="opiniones">
   <div class="container">
     <div class="section-head single">
       <div>
         <div class="tag">Opiniones</div>
         <h2>Tu página no debe verse bonita nada más. Debe ayudarte a vender.</h2>
-        <p>Estas frases las puedes usar de momento como bloque comercial mientras consigues tus primeros testimonios reales.</p>
       </div>
     </div>
     <div class="testimonials">
-      <div class="quote">“Necesitábamos vernos más profesionales y ahora nuestros clientes nos contactan directo por WhatsApp.”<strong>Negocio local</strong><span>Servicio profesional</span></div>
-      <div class="quote">“La página ayudó a que nuestro negocio tuviera mejor presencia y más confianza frente a nuevos clientes.”<strong>PyME</strong><span>Presencia digital</span></div>
-      <div class="quote">“Lo mejor fue que no se quedó estática. Pudimos hacer cambios y mantenerla actualizada.”<strong>Emprendedor</strong><span>Mantenimiento continuo</span></div>
+      <div class="quote">"Necesitábamos vernos más profesionales y ahora nuestros clientes nos contactan directo por WhatsApp."<strong>Negocio local</strong><span>Servicio profesional</span></div>
+      <div class="quote">"La página ayudó a que nuestro negocio tuviera mejor presencia y más confianza frente a nuevos clientes."<strong>PyME</strong><span>Presencia digital</span></div>
+      <div class="quote">"Lo mejor fue que no se quedó estática. Pudimos hacer cambios y mantenerla actualizada."<strong>Emprendedor</strong><span>Mantenimiento continuo</span></div>
     </div>
   </div>
 </section>
+
 <section id="faq">
   <div class="container">
     <div class="section-head single">
@@ -319,7 +730,9 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
     </div>
   </div>
 </section>
-<section>
+
+<!-- FIX #3: CTA Banner con id -->
+<section id="cta">
   <div class="container">
     <div class="cta-banner">
       <div>
@@ -327,12 +740,13 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         <p>ImpulsoDigitalMX combina diseño, captación y mantenimiento para que internet sí se convierta en una herramienta real de crecimiento para tu negocio.</p>
       </div>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20p%C3%A1gina%20web%20y%20mantenimiento" target="_blank" rel="noopener noreferrer">Solicitar información</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20p%C3%A1gina%20web%20y%20mantenimiento" target="_blank" rel="noopener noreferrer">Solicitar información</a>
         <a class="btn btn-secondary" href="#contacto">Hablar ahora</a>
       </div>
     </div>
   </div>
 </section>
+
 <section id="contacto">
   <div class="container">
     <div class="section-head">
@@ -350,24 +764,30 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         <p><strong style="color:#111827;">Marca:</strong> ImpulsoDigitalMX</p>
         <p><strong style="color:#111827;">Landing comercial:</strong> Tu Negocio en Línea</p>
         <p><strong style="color:#111827;">WhatsApp:</strong> +52 221 357 6025</p>
-        <p><strong style="color:#111827;">Servicio:</strong> Presencia digital, posicionamiento, WhatsApp y mantenimiento web</p
+        <p><strong style="color:#111827;">Servicio:</strong> Presencia digital, posicionamiento, WhatsApp y mantenimiento web</p>
+        <!-- FIX #6: Nota interna eliminada — no debe mostrarse a usuarios finales -->
       </div>
       <div class="card">
         <h3>Acción rápida</h3>
         <p>Da el primer paso para impulsar tu negocio en internet con una propuesta clara, accesible y enfocada en resultados.</p>
         <div class="cta-row" style="margin-top:16px;">
-          <a class="btn btn-primary" href="https://wa.me/522213576025?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20para%20atraer%20m%C3%A1s%20clientes" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20para%20atraer%20m%C3%A1s%20clientes" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
           <a class="btn btn-secondary" href="#inicio">Volver arriba</a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+</main>
+
 <footer>
   <div class="container">© 2026 ImpulsoDigitalMX · Tu Negocio en Línea · Presencia digital para negocios que quieren crecer</div>
 </footer>
-<a class="whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20impulsar%20mi%20negocio%20en%20internet" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+
+<!-- FIX #5: alt text más descriptivo en botón flotante WhatsApp -->
+<a class="whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20impulsar%20mi%20negocio%20en%20internet" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Contactar por WhatsApp">
 </a>
 </body>
 </html>
