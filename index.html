@@ -436,8 +436,8 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
 .caso-browser-bar{background:#f3f4f6;padding:10px 14px;display:flex;align-items:center;gap:7px;border-bottom:1px solid var(--line);}
 .caso-browser-dot{width:9px;height:9px;border-radius:50%;}
 .caso-browser-url{flex:1;background:#fff;border-radius:8px;padding:5px 12px;font-size:.78rem;color:var(--muted);margin-left:6px;border:1px solid var(--line);}
-.caso-browser-body{aspect-ratio:16/10;overflow:hidden;position:relative;background:#0a0a0a;}
-.caso-browser-body img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.caso-browser-body{aspect-ratio:16/10;overflow:hidden;position:relative;background:#0a0a0a;display:flex;flex-direction:column;}
+.caso-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.7);}
 .caso-link-pill{display:inline-flex;align-items:center;gap:6px;background:var(--primary);color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.03em;padding:7px 14px;border-radius:999px;margin-bottom:14px;}
 .caso-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;}
 .caso-stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center;box-shadow:var(--shadow);}
@@ -554,8 +554,32 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
             <span class="caso-browser-dot" style="background:#28c840"></span>
             <span class="caso-browser-url">systemlaza.com.mx</span>
           </div>
-          <div class="caso-browser-body">
-            <img src="https://systemlaza.com.mx/images/proyectos/Kawasaki/1.jpg" alt="Proyecto real de Systemlaza, cliente de ImpulsoDigitalMX" loading="lazy">
+          <div class="caso-browser-body" style="background:#0a0a0a;">
+            <!-- banner rojo de aniversario -->
+            <div style="position:relative;z-index:3;background:#A20000;padding:5px 0;overflow:hidden;white-space:nowrap;">
+              <span style="font-size:.45rem;letter-spacing:.15em;color:#fff;text-transform:uppercase;font-weight:700;padding-left:10px;">🦅 Celebrando nuestro 10° Aniversario · Systemlaza S.A. de C.V. · 2016–2026 ·</span>
+            </div>
+            <!-- mini navbar -->
+            <div style="position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:8px 14px;background:rgba(0,0,0,0.4);">
+              <div style="font-size:.62rem;font-weight:800;letter-spacing:.12em;color:#fff;">SYSTEMLAZA</div>
+              <div style="background:#A20000;color:#fff;font-size:.42rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:3px;">Cotizar</div>
+            </div>
+            <!-- hero -->
+            <div style="position:relative;flex:1;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+              <img class="caso-bg-img" src="https://systemlaza.com.mx/images/hero-bg.jpg" alt="Sitio web de Systemlaza, cliente de ImpulsoDigitalMX" loading="lazy">
+              <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.05),rgba(0,0,0,.2),rgba(0,0,0,.7));"></div>
+              <div style="position:absolute;left:0;top:0;bottom:0;width:17%;display:flex;align-items:center;justify-content:center;">
+                <img src="https://systemlaza.com.mx/images/logo.png" alt="" style="width:78%;object-fit:contain;filter:drop-shadow(0 0 14px rgba(162,0,0,.5));" loading="lazy">
+              </div>
+              <div style="position:absolute;right:0;top:0;bottom:0;width:16%;display:flex;align-items:center;justify-content:center;">
+                <img src="https://systemlaza.com.mx/images/aniversario.png" alt="" style="width:80%;object-fit:contain;" loading="lazy">
+              </div>
+              <div style="position:relative;text-align:center;z-index:2;padding:0 19%;">
+                <div style="font-size:.4rem;letter-spacing:.18em;color:#cc3333;text-transform:uppercase;font-weight:700;margin-bottom:5px;">Sistemas Especiales de Seguridad Industrial</div>
+                <div style="font-family:Arial,sans-serif;font-weight:900;color:#fff;font-size:clamp(1.3rem,5vw,2.3rem);letter-spacing:-.02em;line-height:.95;text-transform:uppercase;">SYSTEM<span style="color:#cc3333;">LAZA</span></div>
+                <div style="font-size:.42rem;font-weight:500;letter-spacing:.15em;color:#fff;text-transform:uppercase;margin-top:7px;">Protección industrial de vanguardia</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="caso-stats">
