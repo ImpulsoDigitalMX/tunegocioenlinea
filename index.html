@@ -427,12 +427,42 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
   .hero-grid,.offer-grid,.contact-grid,.vision-grid,.cta-banner,.section-head,.faq-grid{grid-template-columns:1fr}
   .oferta-banner{grid-template-columns:1fr;}
 }
+/* =============================================
+   CASO DE ÉXITO — Systemlaza
+   ============================================= */
+#caso{background:#ffffff;}
+.caso-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.caso-browser{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);}
+.caso-browser-bar{background:#f3f4f6;padding:10px 14px;display:flex;align-items:center;gap:7px;border-bottom:1px solid var(--line);}
+.caso-browser-dot{width:9px;height:9px;border-radius:50%;}
+.caso-browser-url{flex:1;background:#fff;border-radius:8px;padding:5px 12px;font-size:.78rem;color:var(--muted);margin-left:6px;border:1px solid var(--line);}
+.caso-browser-body{aspect-ratio:16/10;overflow:hidden;position:relative;background:#0a0a0a;}
+.caso-browser-body img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.caso-link-pill{display:inline-flex;align-items:center;gap:6px;background:var(--primary);color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.03em;padding:7px 14px;border-radius:999px;margin-bottom:14px;}
+.caso-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;}
+.caso-stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center;box-shadow:var(--shadow);}
+.caso-stat strong{display:block;font-size:1.3rem;font-weight:900;color:#111827;letter-spacing:-.02em;}
+.caso-stat span{font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;font-weight:700;}
+.caso-quote{border-left:3px solid var(--primary);background:var(--primary-soft);padding:16px 20px;border-radius:0 14px 14px 0;margin:20px 0;font-size:.98rem;color:#374151;font-style:italic;line-height:1.6;}
+.caso-list{margin-top:18px;display:flex;flex-direction:column;gap:12px;}
+.caso-list-item{display:flex;gap:10px;align-items:flex-start;}
+.caso-check{width:22px;height:22px;border-radius:7px;background:var(--whatsapp-soft);color:var(--whatsapp-dark);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:900;margin-top:1px;}
+.caso-list-text{font-size:.94rem;color:#374151;line-height:1.55;}
+.caso-cta-row{margin-top:24px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.caso-visit{font-size:.88rem;color:var(--muted);}
+.caso-visit a{color:var(--primary-dark);font-weight:800;border-bottom:1px solid #cce8f7;}
+
+@media(max-width:980px){
+  .caso-grid{grid-template-columns:1fr;}
+}
+
 @media(max-width:760px){
   .nav{align-items:flex-start;flex-direction:column}
   .hero{padding:52px 0 24px}
   .metrics-grid,.hero-card-grid,.testimonials{grid-template-columns:1fr}
   .planes-grid{grid-template-columns:1fr;}
   .planes-grid .plan-card:last-child{grid-column:auto;}
+  .caso-stats{grid-template-columns:1fr;}
   h1{font-size:2.95rem}
   .section-head h2{font-size:2.4rem}
   section{padding:64px 0}
@@ -455,11 +485,12 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         </div>
       </a>
       <div class="nav-links">
+        <a href="#caso">Caso de Éxito</a>
         <a href="#propuesta">Vista general</a>
         <a href="#servicios">Funciones</a>
         <a href="#planes">Planes</a>
         <a href="#faq">Preguntas</a>
-        <a class="nav-cta" href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20su%20servicio" target="_blank" rel="noopener noreferrer">
+        <a class="nav-cta" href="https://wa.me/522221888741?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20su%20servicio" target="_blank" rel="noopener noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
           WhatsApp
         </a>
@@ -507,6 +538,56 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
       <div class="metric"><strong>Más clientes</strong><span>Estructuramos tu presencia para generar mensajes, llamadas y oportunidades.</span></div>
       <div class="metric"><strong>Google & Maps</strong><span>Posicionamos tu negocio en los canales donde te buscan.</span></div>
       <div class="metric"><strong>Mantenimiento real</strong><span>Tu sitio sigue vivo, actualizado y alineado a tu negocio.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="caso">
+  <div class="container">
+    <div class="caso-grid">
+      <div>
+        <div class="caso-link-pill">🏆 Caso de éxito real</div>
+        <div class="caso-browser">
+          <div class="caso-browser-bar">
+            <span class="caso-browser-dot" style="background:#ff5f57"></span>
+            <span class="caso-browser-dot" style="background:#febc2e"></span>
+            <span class="caso-browser-dot" style="background:#28c840"></span>
+            <span class="caso-browser-url">systemlaza.com.mx</span>
+          </div>
+          <div class="caso-browser-body">
+            <img src="https://systemlaza.com.mx/images/proyectos/Kawasaki/1.jpg" alt="Proyecto real de Systemlaza, cliente de ImpulsoDigitalMX" loading="lazy">
+          </div>
+        </div>
+        <div class="caso-stats">
+          <div class="caso-stat"><strong>10+</strong><span>Años en operación</span></div>
+          <div class="caso-stat"><strong>8</strong><span>Clientes industriales</span></div>
+          <div class="caso-stat"><strong>50+</strong><span>Proyectos mostrados</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="tag">No es un mockup</div>
+        <h2>Esto es un cliente real, no una maqueta.</h2>
+        <p style="margin-top:14px;font-size:1.05rem;color:var(--muted);">Systemlaza es una empresa de seguridad industrial en Apodaca, Nuevo León. Necesitaban un sitio con la credibilidad para competir por contratos con empresas como Kawasaki, Panasonic y Hazama Ando — no solo "una página bonita".</p>
+        <div class="caso-quote">"Necesitábamos un sitio que se viera tan serio como las plantas industriales en las que trabajamos. Eso es justo lo que construyeron."</div>
+        <div class="caso-list">
+          <div class="caso-list-item">
+            <span class="caso-check">✓</span>
+            <span class="caso-list-text"><strong style="color:#111827;">Portafolio de proyectos reales</strong> con clientes verificables, no relleno genérico.</span>
+          </div>
+          <div class="caso-list-item">
+            <span class="caso-check">✓</span>
+            <span class="caso-list-text"><strong style="color:#111827;">Cotización directa por WhatsApp</strong> desde cualquier punto del sitio, sin fricción.</span>
+          </div>
+          <div class="caso-list-item">
+            <span class="caso-check">✓</span>
+            <span class="caso-list-text"><strong style="color:#111827;">Diseño a la altura de su industria</strong>, con la seriedad visual que sus clientes esperan ver.</span>
+          </div>
+        </div>
+        <div class="caso-cta-row">
+          <a class="btn btn-primary" href="https://wa.me/522221888741?text=Hola,%20vi%20el%20caso%20de%20Systemlaza%20y%20quiero%20algo%20similar%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer">Quiero un sitio así</a>
+          <span class="caso-visit">Ver sitio completo: <a href="https://systemlaza.com.mx" target="_blank" rel="noopener noreferrer">systemlaza.com.mx ↗</a></span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -656,7 +737,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         </div>
 
         <div class="plan-cta">
-          <a class="btn btn-whatsapp" href="https://wa.me/522213576025?text=Hola,%20me%20interesa%20el%20Plan%201%20Presencia%20Web" target="_blank" rel="noopener noreferrer">Contratar Plan 1</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/522221888741?text=Hola,%20me%20interesa%20el%20Plan%201%20Presencia%20Web" target="_blank" rel="noopener noreferrer">Contratar Plan 1</a>
           <a class="btn btn-secondary" href="#contacto">Más información</a>
         </div>
       </div>
@@ -698,7 +779,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         </div>
 
         <div class="plan-cta">
-          <a class="btn btn-whatsapp" href="https://wa.me/522213576025?text=Hola,%20me%20interesa%20el%20Plan%202%20Redes%20Sociales" target="_blank" rel="noopener noreferrer">Contratar Plan 2</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/522221888741?text=Hola,%20me%20interesa%20el%20Plan%202%20Redes%20Sociales" target="_blank" rel="noopener noreferrer">Contratar Plan 2</a>
           <a class="btn btn-secondary" href="#contacto">Más información</a>
         </div>
       </div>
@@ -742,7 +823,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         </div>
 
         <div class="plan-cta">
-          <a class="btn btn-primary" href="https://wa.me/522213576025?text=Hola,%20me%20interesa%20el%20Plan%203%20Paquete%20Completo" target="_blank" rel="noopener noreferrer">Contratar Plan 3</a>
+          <a class="btn btn-primary" href="https://wa.me/522221888741?text=Hola,%20me%20interesa%20el%20Plan%203%20Paquete%20Completo" target="_blank" rel="noopener noreferrer">Contratar Plan 3</a>
           <a class="btn btn-secondary" href="#contacto">Más información</a>
         </div>
       </div>
@@ -770,15 +851,23 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
   <div class="container">
     <div class="section-head single">
       <div>
-        <div class="tag">Opiniones</div>
+        <div class="tag">Resultados</div>
         <h2>Tu página no debe verse bonita nada más. Debe ayudarte a vender.</h2>
-        <p style="margin-top:12px;font-size:1.05rem;color:var(--muted);">Estos son algunos comentarios de negocios que ya dieron el paso hacia la presencia digital. Próximamente aquí estarán los testimonios reales de nuestros clientes.</p>
+        <p style="margin-top:12px;font-size:1.05rem;color:var(--muted);">Por ahora, nuestra mejor carta de presentación es un proyecto real y verificable. Conforme más negocios se suban con nosotros, aquí irán apareciendo sus testimonios.</p>
       </div>
     </div>
     <div class="testimonials">
-      <div class="quote">"Necesitábamos vernos más profesionales y ahora nuestros clientes nos contactan directo por WhatsApp."<strong>Negocio local</strong><span>Servicio profesional</span></div>
-      <div class="quote">"La página ayudó a que nuestro negocio tuviera mejor presencia y más confianza frente a nuevos clientes."<strong>PyME</strong><span>Presencia digital</span></div>
-      <div class="quote">"Lo mejor fue que no se quedó estática. Pudimos hacer cambios y mantenerla actualizada."<strong>Emprendedor</strong><span>Mantenimiento continuo</span></div>
+      <div class="quote">"Necesitábamos un sitio que se viera tan serio como las plantas industriales en las que trabajamos. Eso es justo lo que construyeron."<strong>Systemlaza S.A. de C.V.</strong><span>Seguridad industrial · Apodaca, N.L.</span></div>
+      <div class="quote" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:10px;">
+        <div class="icon" style="margin-bottom:4px;">🏆</div>
+        <strong style="margin:0;">Ve el caso completo</strong>
+        <span>Conoce el proyecto entero en <a href="https://systemlaza.com.mx" target="_blank" rel="noopener noreferrer" style="color:var(--primary-dark);font-weight:700;">systemlaza.com.mx</a></span>
+      </div>
+      <div class="quote" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:10px;background:var(--primary-soft);border-color:#cce8f7;">
+        <strong style="margin:0;color:var(--primary-dark);">¿Tu negocio sigue?</strong>
+        <span>Sé de los primeros en tener tu caso de éxito aquí.</span>
+        <a class="btn btn-whatsapp" style="margin-top:6px;" href="https://wa.me/522221888741?text=Hola,%20quiero%20ser%20el%20siguiente%20caso%20de%20%C3%A9xito" target="_blank" rel="noopener noreferrer">Quiero ser el siguiente</a>
+      </div>
     </div>
   </div>
 </section>
@@ -808,7 +897,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         <p>ImpulsoDigitalMX combina diseño, captación y mantenimiento para que internet sí se convierta en una herramienta real de crecimiento para tu negocio.</p>
       </div>
       <div class="cta-row">
-        <a class="btn btn-whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20ImpulsoDigitalMX" target="_blank" rel="noopener noreferrer">Solicitar información</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/522221888741?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20ImpulsoDigitalMX" target="_blank" rel="noopener noreferrer">Solicitar información</a>
         <a class="btn btn-secondary" href="#contacto">Hablar ahora</a>
       </div>
     </div>
@@ -831,7 +920,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         <h3>Contacto comercial</h3>
         <p><strong style="color:#111827;">Marca:</strong> ImpulsoDigitalMX</p>
         <p><strong style="color:#111827;">Sitio web:</strong> impulsodigitalmx.net</p>
-        <p><strong style="color:#111827;">WhatsApp:</strong> +52 221 357 6025</p>
+        <p><strong style="color:#111827;">WhatsApp:</strong> +52 22 21 88 87 41</p>
         <p><strong style="color:#111827;">Servicio:</strong> Presencia digital, posicionamiento, WhatsApp y mantenimiento web</p>
         <p style="margin-top:10px;"><strong style="color:#111827;">📅 Atención:</strong> Lunes a Viernes · 9:00 am – 7:00 pm</p>
       </div>
@@ -839,7 +928,7 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
         <h3>Acción rápida</h3>
         <p>Da el primer paso para impulsar tu negocio en internet con una propuesta clara, accesible y enfocada en resultados.</p>
         <div class="cta-row" style="margin-top:16px;">
-          <a class="btn btn-whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20para%20atraer%20m%C3%A1s%20clientes" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/522221888741?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20para%20atraer%20m%C3%A1s%20clientes" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
           <a class="btn btn-secondary" href="#inicio">Volver arriba</a>
         </div>
       </div>
@@ -852,17 +941,18 @@ footer{padding:28px 0 42px;border-top:1px solid var(--line);text-align:center;co
 <footer>
   <div class="container">
     <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:16px;">
+      <a href="#caso" style="color:var(--muted);font-weight:600;font-size:.92rem;">Caso de Éxito</a>
       <a href="#planes" style="color:var(--muted);font-weight:600;font-size:.92rem;">Planes</a>
       <a href="#servicios" style="color:var(--muted);font-weight:600;font-size:.92rem;">Servicios</a>
       <a href="#propuesta" style="color:var(--muted);font-weight:600;font-size:.92rem;">Vista general</a>
       <a href="#faq" style="color:var(--muted);font-weight:600;font-size:.92rem;">Preguntas</a>
-      <a href="https://wa.me/522213576025?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20ImpulsoDigitalMX" target="_blank" rel="noopener noreferrer" style="color:var(--whatsapp);font-weight:700;font-size:.92rem;">WhatsApp</a>
+      <a href="https://wa.me/522221888741?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20ImpulsoDigitalMX" target="_blank" rel="noopener noreferrer" style="color:var(--whatsapp);font-weight:700;font-size:.92rem;">WhatsApp</a>
     </div>
     <div style="border-top:1px solid var(--line);padding-top:16px;">© 2026 ImpulsoDigitalMX · Tu Negocio en Línea · Presencia digital para negocios que quieren crecer</div>
   </div>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/522213576025?text=Hola,%20quiero%20impulsar%20mi%20negocio%20en%20internet" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+<a class="whatsapp" href="https://wa.me/522221888741?text=Hola,%20quiero%20impulsar%20mi%20negocio%20en%20internet" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Contactar por WhatsApp">
 </a>
 
