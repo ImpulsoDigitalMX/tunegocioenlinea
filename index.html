@@ -57,7 +57,7 @@
     [data-r=foot]{grid-template-columns:1fr !important}
     [data-r=h1]{font-size:clamp(34px,9vw,52px) !important}
     [data-r=herobtns]{flex-wrap:wrap !important}
-    [data-r=herobtns] a{flex:1 1 auto;justify-content:center}
+    [data-r=herobtns] a{flex:1 1 auto;justify-content:center;white-space:nowrap}
     /* paddings verticales más compactos en móvil */
     [data-screen-label="04 Servicios"] > div,
     [data-screen-label="06 Casos de éxito"] > div{padding:48px 20px !important}
@@ -67,6 +67,12 @@
     [data-screen-label="08 CTA final"]{padding:0 20px 56px !important}
     [data-screen-label="Confianza"]{padding:0 20px 20px !important}
     [data-screen-label="02 Métricas"]{padding:16px 20px 28px !important}
+  }
+  @media (max-width:640px){
+    [data-r=navlinks]{display:none !important}
+    [data-r=nav] a:first-child img:first-child{width:44px !important;height:44px !important}
+    [data-r=nav] a:first-child img:last-child{height:26px !important}
+    [data-r=scenes]{position:static !important;margin:22px 18px 0 !important;gap:16px !important;flex-wrap:wrap !important}
   }
   @media (max-width:520px){
     [data-r=nav]{padding:14px 16px !important}
@@ -183,7 +189,7 @@
         </div>
       </div>
       <!-- indicador de escena (storytelling) -->
-      <div style="position:absolute;left:32px;right:32px;bottom:34px;display:flex;align-items:center;gap:38px;">
+      <div data-r="scenes" style="position:absolute;left:32px;right:32px;bottom:34px;display:flex;align-items:center;gap:38px;">
         <div data-ind="0" style="display:flex;align-items:center;gap:11px;opacity:1;transition:opacity .8s ease;">
           <span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(100deg,#8b5cf6,#22d3ee);transition:background .8s ease;box-shadow:0 0 12px rgba(124,92,255,.9);" data-dot="0"></span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:#c9cede;transition:color .8s;" data-lab="0"><b style="color:#fff;">01</b> &nbsp;Presencia</span>
