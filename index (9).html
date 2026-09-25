@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impulso Digital | Páginas web, SEO local e IA para PyMEs en México</title>
+<meta name="description" content="Agencia digital mexicana para PyMEs y emprendedores: páginas web profesionales, SEO local en Google Maps, redes sociales y asistentes de IA por WhatsApp. Planes desde $4,900 MXN.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#05060b">
+<link rel="canonical" href="https://impulsodigitalmx.net/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Impulso Digital">
+<meta property="og:title" content="Impulso Digital | Tu aliado digital para crecer">
+<meta property="og:description" content="Estrategia, diseño e inteligencia artificial con una sola meta: que tu negocio venda más.">
+<meta property="og:url" content="https://impulsodigitalmx.net/">
+<meta property="og:image" content="https://impulsodigitalmx.net/hero-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#05060b}
+  html{scroll-behavior:smooth}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.15}}
+  @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  img{max-width:100%}
+  /* ---- responsivo ---- */
+  @media (max-width:1120px){
+    [data-r=nav]{padding:16px 20px !important}
+    [data-r=navlinks]{gap:16px !important}
+    [data-r=hero]{min-height:auto !important;box-shadow:0 0 120px rgba(139,92,246,.12) !important}
+    [data-r=herobox]{min-height:auto !important;padding:36px 24px 56px !important}
+    [data-r=h1]{font-size:clamp(40px,6.2vw,66px) !important}
+    [data-r=feat]{grid-template-columns:1fr 1fr !important}
+    [data-r=metrics]{grid-template-columns:1fr 1fr !important;padding:30px 6px !important}
+    [data-r=proc]{grid-template-columns:repeat(3,1fr) !important;row-gap:32px !important}
+    [data-r=svc]{grid-template-columns:1fr 1fr !important}
+    [data-r=plans]{grid-template-columns:1fr !important;max-width:540px;margin-left:auto !important;margin-right:auto !important}
+    [data-r=addons]{grid-template-columns:1fr !important;max-width:540px;margin-left:auto !important;margin-right:auto !important}
+    [data-r=addons] > div{grid-column:span 1 !important}
+    [data-r=cases]{grid-template-columns:1fr 1fr !important}
+    [data-r=cta]{flex-direction:column;align-items:flex-start !important;gap:24px !important;padding:36px 30px !important}
+    [data-r=foot]{grid-template-columns:1fr 1fr !important}
+  }
+  @media (max-width:760px){
+    [data-r=navlinks] a:not(:last-child){display:none !important}
+    [data-r=feat]{grid-template-columns:1fr !important}
+    [data-r=metrics]{grid-template-columns:1fr 1fr !important}
+    [data-r=proc]{grid-template-columns:1fr 1fr !important}
+    [data-r=svc]{grid-template-columns:1fr !important}
+    [data-r=cases]{grid-template-columns:1fr !important}
+    [data-r=extras]{grid-template-columns:1fr !important}
+    [data-r=foot]{grid-template-columns:1fr !important}
+    [data-r=h1]{font-size:clamp(34px,9vw,52px) !important}
+    [data-r=herobtns]{flex-wrap:wrap !important}
+    [data-r=herobtns] a{flex:1 1 auto;justify-content:center;white-space:nowrap}
+    /* paddings verticales más compactos en móvil */
+    [data-screen-label="04 Servicios"] > div,
+    [data-screen-label="06 Casos de éxito"] > div{padding:48px 20px !important}
+    [data-screen-label="05 Planes"]{padding:52px 20px !important}
+    [data-screen-label="03 Proceso"]{padding:36px 20px 44px !important}
+    [data-screen-label="07 Testimonio"]{padding:48px 20px !important}
+    [data-screen-label="08 CTA final"]{padding:0 20px 56px !important}
+    [data-screen-label="Confianza"]{padding:0 20px 20px !important}
+    [data-screen-label="02 Métricas"]{padding:16px 20px 28px !important}
+  }
+  @media (max-width:640px){
+    [data-r=navlinks]{display:none !important}
+    [data-r=nav] a:first-child img:first-child{width:44px !important;height:44px !important}
+    [data-r=nav] a:first-child img:last-child{height:26px !important}
+    [data-r=scenes]{position:static !important;margin:22px 18px 0 !important;gap:16px !important;flex-wrap:wrap !important}
+  }
+  @media (max-width:520px){
+    [data-r=nav]{padding:14px 16px !important}
+    [data-r=metrics]{grid-template-columns:1fr !important}
+    [data-r=proc]{grid-template-columns:1fr !important}
+    [data-r=herobox]{padding:28px 18px 44px !important}
+    [data-r=h1]{font-size:clamp(30px,10vw,44px) !important}
+    [data-screen-label="05 Planes"]{padding:44px 16px !important}
+    [data-screen-label="04 Servicios"] > div,
+    [data-screen-label="06 Casos de éxito"] > div{padding:40px 16px !important}
+  }
+</style>
+<style>
+.hv1:hover{color:#fff}
+.hv2:hover{color:#fff}
+.hv3:hover{color:#fff}
+.hv4:hover{color:#fff}
+.hv5:hover{filter:brightness(1.15)}
+.hv6:hover{transform:scale(1.03);filter:brightness(1.1)}
+.hv7:hover{transform:scale(1.03);border-color:rgba(255,255,255,.55)}
+.hv8:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv9:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv10:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv11:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv12:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv13:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv14:hover{filter:brightness(1.15)}
+.hv15:hover{border-color:rgba(255,255,255,.5)}
+.hv16:hover{border-color:rgba(255,255,255,.5)}
+.hv17:hover{filter:brightness(1.15)}
+.hv18:hover{filter:brightness(1.15)}
+.hv19:hover{background:rgba(139,92,246,.15)}
+.hv20:hover{background:rgba(34,211,238,.12)}
+.hv21:hover{background:rgba(245,158,11,.15)}
+.hv22:hover{background:rgba(236,72,153,.13)}
+.hv23:hover{border-color:rgba(255,255,255,.45)}
+.hv24:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv25:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv26:hover{border-color:rgba(139,92,246,.5);transform:translateY(-3px)}
+.hv27:hover{transform:scale(1.03)}
+.hv28:hover{opacity:.85}
+.hv29:hover{opacity:.85}
+.hv30:hover{color:#fff}
+.hv31:hover{color:#fff}
+.hv32:hover{color:#fff}
+.hv33:hover{color:#fff}
+.hv34:hover{color:#fff}
+.hv35:hover{color:#fff}
+.hv36:hover{color:#fff}
+.hv37:hover{color:#fff}
+.hv38:hover{color:#fff}
+.hv39:hover{color:#fff}
+.hv40:hover{color:#fff}
+.hv41:hover{color:#fff}
+.hv42:hover{color:#fff}
+.hv43:hover{color:#fff}
+.hv44:hover{border-color:#22d3ee}
+.hv45:hover{transform:scale(1.08)}
+</style>
+</head>
+<body>
+
+
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="ig" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+    <rect width="100" height="100" fill="#05060b"/>
+    <path d="M50 22 L70 50 L50 44 L30 50 Z" fill="url(#ig)"/>
+    <path d="M50 44 L70 50 L50 78 L30 50 Z" fill="url(#ig)" opacity="0.55"/>
+  </svg>
+</template>
+
+<div style="background:#05060b;color:#f2f4f8;font-family:'IBM Plex Sans',sans-serif;min-height:100vh;">
+
+  <!-- ============ NAV ============ -->
+  <nav style="position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(5,6,11,.72);border-bottom:1px solid rgba(255,255,255,.06);">
+    <div data-r="nav" style="max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 32px;">
+      <a href="#top" style="text-decoration:none;display:flex;align-items:center;gap:11px;">
+        <img src="logo-icon.png" alt="Impulso Digital" style="width:56px;height:56px;display:block;">
+        <img src="logo-wordmark.png" alt="Impulso Digital" style="height:34px;width:auto;display:block;">
+      </a>
+      <div data-r="navlinks" style="display:flex;align-items:center;gap:32px;">
+        <a href="#servicios" style="color:#eef1f7;font-size:15px;font-weight:500;text-decoration:none;white-space:nowrap;" class="hv1">Servicios</a>
+        <a href="#planes" style="color:#eef1f7;font-size:15px;font-weight:500;text-decoration:none;white-space:nowrap;" class="hv2">Planes</a>
+        <a href="#casos" style="color:#eef1f7;font-size:15px;font-weight:500;text-decoration:none;white-space:nowrap;" class="hv3">Casos de éxito</a>
+        <a href="#proceso" style="color:#eef1f7;font-size:15px;font-weight:500;text-decoration:none;white-space:nowrap;" class="hv4">Nosotros</a>
+        <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(100deg,#8b5cf6,#22d3ee);color:#fff;font-weight:600;font-size:14px;padding:11px 20px;border-radius:100px;text-decoration:none;" class="hv5">Agenda una asesoría →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="top" data-r="hero" style="position:relative;overflow:hidden;min-height:680px;box-shadow:0 0 180px rgba(139,92,246,.12);">
+    <!-- rotating full-bleed background (Ken Burns cinematográfico) -->
+    <div style="position:absolute;inset:0;">
+      <img src="hero-1.jpg" alt="" data-hero="0" loading="eager" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:78% center;opacity:1;transform:scale(1.06);transition:opacity 1.2s ease, transform 6s ease;">
+      <img src="hero-2.jpg" alt="" data-hero="1" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;opacity:0;transform:translateX(0) scale(1.04);transition:opacity 1.2s ease, transform 6s ease;">
+      <img src="hero-3.jpg" alt="" data-hero="2" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:74% center;opacity:0;transform:translateY(0) scale(1.04);transition:opacity 1.2s ease, transform 6s ease;">
+    </div>
+    <!-- overlay oscuro para contraste -->
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,6,11,.92) 0%,rgba(5,6,11,.82) 35%,rgba(5,6,11,.35) 62%,rgba(5,6,11,.10) 100%);pointer-events:none;"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg,#05060b,rgba(5,6,11,0) 26%);pointer-events:none;"></div>
+    <div data-r="herobox" style="position:relative;max-width:1240px;margin:0 auto;padding:40px 32px 70px;min-height:660px;display:flex;flex-direction:column;justify-content:flex-start;">
+      <div style="max-width:600px;">
+        <div style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(139,92,246,.4);border-radius:100px;padding:7px 16px;margin-bottom:28px;background:rgba(139,92,246,.08);backdrop-filter:blur(4px);">
+          <span style="width:7px;height:7px;border-radius:50%;background:#22d3ee;animation:blink 1.8s infinite;"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#c4b5fd;">TU ALIADO DIGITAL</span>
+        </div>
+        <h1 data-r="h1" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:66px;line-height:1.03;letter-spacing:-.03em;color:#fff;margin:0 0 24px;text-shadow:0 2px 40px rgba(0,0,0,.6);">La presencia digital que <span style="background:linear-gradient(100deg,#a78bfa,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;">trae clientes</span> a tu negocio.</h1>
+        <p style="font-size:18px;line-height:1.65;color:#c3c9da;max-width:440px;margin:0 0 36px;text-shadow:0 1px 16px rgba(0,0,0,.6);">Estrategia, diseño e inteligencia artificial con una sola meta: llenar tu agenda de clientes.</p>
+        <div data-r="herobtns" style="display:flex;align-items:center;gap:14px;">
+          <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:linear-gradient(100deg,#8b5cf6,#22d3ee);color:#fff;font-weight:600;font-size:16px;padding:16px 28px;border-radius:100px;text-decoration:none;box-shadow:0 8px 32px rgba(139,92,246,.35);transition:transform .3s ease, filter .3s ease;" class="hv6">Agenda una asesoría gratuita →</a>
+          <a href="#planes" style="display:inline-flex;align-items:center;gap:8px;color:#e6e9f0;font-weight:500;font-size:16px;padding:16px 26px;border:1px solid rgba(255,255,255,.28);border-radius:100px;text-decoration:none;backdrop-filter:blur(4px);transition:transform .3s ease, border-color .3s ease;" class="hv7">Ver planes →</a>
+        </div>
+      </div>
+      <!-- indicador de escena (storytelling) -->
+      <div data-r="scenes" style="position:absolute;left:32px;right:32px;bottom:34px;display:flex;align-items:center;gap:38px;">
+        <div data-ind="0" style="display:flex;align-items:center;gap:11px;opacity:1;transition:opacity .8s ease;">
+          <span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(100deg,#8b5cf6,#22d3ee);transition:background .8s ease;box-shadow:0 0 12px rgba(124,92,255,.9);" data-dot="0"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:#c9cede;transition:color .8s;" data-lab="0"><b style="color:#fff;">01</b> &nbsp;Presencia</span>
+        </div>
+        <div data-ind="1" style="display:flex;align-items:center;gap:11px;opacity:0.4;transition:opacity .8s ease;">
+          <span style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.28);transition:background .8s ease;box-shadow:none;" data-dot="1"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:#6b7288;transition:color .8s;" data-lab="1"><b style="color:#fff;">02</b> &nbsp;Ecosistema</span>
+        </div>
+        <div data-ind="2" style="display:flex;align-items:center;gap:11px;opacity:0.4;transition:opacity .8s ease;">
+          <span style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.28);transition:background .8s ease;box-shadow:none;" data-dot="2"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:#6b7288;transition:color .8s;" data-lab="2"><b style="color:#fff;">03</b> &nbsp;Resultados</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ FEATURES ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:0 32px 28px;">
+    <div data-reveal="" data-r="feat" style="display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.025);">
+      <div style="display:flex;gap:14px;padding:24px 26px;border-right:1px solid rgba(255,255,255,.07);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.6" style="flex-shrink:0;margin-top:2px;"><rect x="3" y="4" width="18" height="17" rx="3"></rect><path d="M8 12l3 3 5-6"></path></svg>
+        <div><div style="font-weight:600;font-size:15px;color:#fff;margin-bottom:3px;">Estrategia sólida</div><div style="font-size:13px;color:#8a91a5;line-height:1.5;">Decisiones basadas en datos y experiencia.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;padding:24px 26px;border-right:1px solid rgba(255,255,255,.07);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.6" style="flex-shrink:0;margin-top:2px;"><path d="M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"></path></svg>
+        <div><div style="font-weight:600;font-size:15px;color:#fff;margin-bottom:3px;">Diseño premium</div><div style="font-size:13px;color:#8a91a5;line-height:1.5;">Experiencias digitales que transmiten valor.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;padding:24px 26px;border-right:1px solid rgba(255,255,255,.07);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.6" style="flex-shrink:0;margin-top:2px;"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3.5"></circle></svg>
+        <div><div style="font-weight:600;font-size:15px;color:#fff;margin-bottom:3px;">Tecnología confiable</div><div style="font-size:13px;color:#8a91a5;line-height:1.5;">Soluciones rápidas, seguras y escalables.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;padding:24px 26px;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.6" style="flex-shrink:0;margin-top:2px;"><path d="M4 18v-6a8 8 0 0116 0v6"></path><rect x="2.5" y="14" width="4.5" height="6" rx="2"></rect><rect x="17" y="14" width="4.5" height="6" rx="2"></rect></svg>
+        <div><div style="font-weight:600;font-size:15px;color:#fff;margin-bottom:3px;">Acompañamiento experto</div><div style="font-size:13px;color:#8a91a5;line-height:1.5;">Un equipo que impulsa tu crecimiento.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÉTRICAS ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:20px 32px 36px;">
+    <div data-reveal="" data-r="metrics" style="display:grid;grid-template-columns:1fr 1.25fr 1fr 1fr;gap:0;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:linear-gradient(160deg,rgba(139,92,246,.06),rgba(34,211,238,.03));padding:36px 10px;">
+      <div style="padding:0 30px;border-right:1px solid rgba(255,255,255,.07);">
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;color:#fff;">5 días</div>
+        <div style="font-size:13px;color:#8a91a5;line-height:1.5;margin-top:6px;">Hábiles para tener tu sitio Esencial en línea, contados desde que nos entregas tu información</div>
+      </div>
+      <div style="padding:0 30px;border-right:1px solid rgba(255,255,255,.07);">
+        <div id="metric-48" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:56px;line-height:1;background:linear-gradient(100deg,#a78bfa,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;">$2,889</div>
+        <div style="font-size:13px;color:#8a91a5;line-height:1.5;margin-top:6px;">Ahorras hasta esto al contratar el Paquete Completo en lugar de cada servicio por separado*</div>
+      </div>
+      <div style="padding:0 30px;border-right:1px solid rgba(255,255,255,.07);">
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;color:#fff;">24/7</div>
+        <div style="font-size:13px;color:#8a91a5;line-height:1.5;margin-top:6px;">Tus asistentes de IA atienden a tus clientes por WhatsApp aun cuando tu negocio está cerrado</div>
+      </div>
+      <div style="padding:0 30px;">
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;color:#fff;">1 a 1</div>
+        <div style="font-size:13px;color:#8a91a5;line-height:1.5;margin-top:6px;">Tratas directo con quien diseña tu sitio. Sin intermediarios ni cambios de ejecutivo</div>
+      </div>
+    </div>
+    <div style="font-size:12px;color:#5c6377;margin-top:12px;padding-left:6px;">*Comparado con el precio individual de cada servicio incluido en el Plan Premium.</div>
+  </section>
+
+  <!-- ============ PROCESO ============ -->
+  <section id="proceso" style="max-width:1240px;margin:0 auto;padding:44px 32px 56px;">
+    <div data-reveal="" style="display:flex;align-items:center;gap:20px;margin-bottom:40px;">
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14));"></div>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.22em;color:#c9cede;">MÉTODO IMPULSO · 6 PASOS</span>
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.14),transparent);"></div>
+    </div>
+    <div data-reveal="" data-r="proc" style="display:grid;grid-template-columns:repeat(6,1fr);gap:14px;">
+      
+        <div style="text-align:center;padding:0 4px;">
+          <div style="width:58px;height:58px;border-radius:50%;border:1px solid rgba(139,92,246,.45);background:rgba(139,92,246,.07);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#c4b5fd;">01</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#fff;margin-bottom:6px;">DESCUBRIMOS</div>
+          <div style="font-size:12px;color:#8a91a5;line-height:1.5;">Entendemos tu negocio y tus objetivos.</div>
+        </div>
+      
+        <div style="text-align:center;padding:0 4px;">
+          <div style="width:58px;height:58px;border-radius:50%;border:1px solid rgba(139,92,246,.45);background:rgba(139,92,246,.07);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#c4b5fd;">02</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#fff;margin-bottom:6px;">ESTRATEGIA</div>
+          <div style="font-size:12px;color:#8a91a5;line-height:1.5;">Creamos un plan digital a tu medida.</div>
+        </div>
+      
+        <div style="text-align:center;padding:0 4px;">
+          <div style="width:58px;height:58px;border-radius:50%;border:1px solid rgba(139,92,246,.45);background:rgba(139,92,246,.07);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#c4b5fd;">03</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#fff;margin-bottom:6px;">DISEÑAMOS</div>
+          <div style="font-size:12px;color:#8a91a5;line-height:1.5;">Diseñamos experiencias que conectan.</div>
+        </div>
+      
+        <div style="text-align:center;padding:0 4px;">
+          <div style="width:58px;height:58px;border-radius:50%;border:1px solid rgba(139,92,246,.45);background:rgba(139,92,246,.07);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#c4b5fd;">04</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#fff;margin-bottom:6px;">DESARROLLAMOS</div>
+          <div style="font-size:12px;color:#8a91a5;line-height:1.5;">Desarrollamos con tecnología de alto rendimiento.</div>
+        </div>
+      
+        <div style="text-align:center;padding:0 4px;">
+          <div style="width:58px;height:58px;border-radius:50%;border:1px solid rgba(139,92,246,.45);background:rgba(139,92,246,.07);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#c4b5fd;">05</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#fff;margin-bottom:6px;">LANZAMOS</div>
+          <div style="font-size:12px;color:#8a91a5;line-height:1.5;">Publicamos y optimizamos cada detalle.</div>
+        </div>
+      
+        <div style="text-align:center;padding:0 4px;">
+          <div style="width:58px;height:58px;border-radius:50%;border:1px solid rgba(139,92,246,.45);background:rgba(139,92,246,.07);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#c4b5fd;">06</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#fff;margin-bottom:6px;">IMPULSAMOS</div>
+          <div style="font-size:12px;color:#8a91a5;line-height:1.5;">Implementamos y optimizamos para que sigas creciendo.</div>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section id="servicios" style="background:#080a12;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);">
+    <div style="max-width:1240px;margin:0 auto;padding:72px 32px;">
+      <div data-reveal="" style="text-align:center;margin-bottom:44px;max-width:680px;margin-left:auto;margin-right:auto;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.22em;color:#8b93ab;margin-bottom:14px;">CÓMO TRABAJAMOS</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;letter-spacing:-.02em;color:#fff;margin:0 0 12px;">Un solo equipo para toda tu presencia digital</h2>
+        <p style="font-size:16px;color:#8a91a5;margin:0;line-height:1.6;">Combinamos diseño, tecnología y estrategia en un mismo lugar. Estas son las capacidades que ponemos a trabajar por tu negocio — las armamos en los planes de abajo según lo que necesites.</p>
+      </div>
+      <div data-reveal="" data-r="svc" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+        
+          <div style="border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.02);padding:26px;transition:border-color .25s,transform .25s;" class="hv8">
+            <div style="width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(139,92,246,.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:20px;color:#c4b5fd;font-family:'Space Grotesk',sans-serif;font-weight:700;">◳</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Diseño y experiencia</div>
+            <div style="font-size:14px;color:#8a91a5;line-height:1.6;">Sitios y perfiles rápidos, modernos y pensados para convertir visitantes en clientes.</div>
+          </div>
+        
+          <div style="border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.02);padding:26px;transition:border-color .25s,transform .25s;" class="hv9">
+            <div style="width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(139,92,246,.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:20px;color:#c4b5fd;font-family:'Space Grotesk',sans-serif;font-weight:700;">◱</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Desarrollo y tecnología</div>
+            <div style="font-size:14px;color:#8a91a5;line-height:1.6;">Bases sólidas, seguras y fáciles de administrar, listas para crecer contigo.</div>
+          </div>
+        
+          <div style="border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.02);padding:26px;transition:border-color .25s,transform .25s;" class="hv10">
+            <div style="width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(139,92,246,.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:20px;color:#c4b5fd;font-family:'Space Grotesk',sans-serif;font-weight:700;">◍</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Visibilidad y SEO local</div>
+            <div style="font-size:14px;color:#8a91a5;line-height:1.6;">Que te encuentren primero en Google y en el mapa cuando te buscan en tu zona.</div>
+          </div>
+        
+          <div style="border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.02);padding:26px;transition:border-color .25s,transform .25s;" class="hv11">
+            <div style="width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(139,92,246,.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:20px;color:#c4b5fd;font-family:'Space Grotesk',sans-serif;font-weight:700;">◔</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Contenido y estrategia</div>
+            <div style="font-size:14px;color:#8a91a5;line-height:1.6;">Mensajes y textos comerciales orientados a que la gente te contacte.</div>
+          </div>
+        
+          <div style="border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.02);padding:26px;transition:border-color .25s,transform .25s;" class="hv12">
+            <div style="width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(139,92,246,.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:20px;color:#c4b5fd;font-family:'Space Grotesk',sans-serif;font-weight:700;">◧</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Redes y comunidad</div>
+            <div style="font-size:14px;color:#8a91a5;line-height:1.6;">Presencia coherente en Instagram, Facebook y WhatsApp, todo conectado.</div>
+          </div>
+        
+          <div style="border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.02);padding:26px;transition:border-color .25s,transform .25s;" class="hv13">
+            <div style="width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(139,92,246,.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:20px;color:#c4b5fd;font-family:'Space Grotesk',sans-serif;font-weight:700;">◈</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Automatización con IA</div>
+            <div style="font-size:14px;color:#8a91a5;line-height:1.6;">Asistentes y flujos que responden, filtran y agendan por ti, 24/7.</div>
+          </div>
+        
+      </div>
+      <div data-reveal="" style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:40px;flex-wrap:wrap;">
+        <span style="font-size:15px;color:#8a91a5;">¿No sabes por dónde empezar? Lo armamos contigo.</span>
+        <a href="#planes" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(100deg,#8b5cf6,#22d3ee);color:#fff;font-weight:600;font-size:15px;padding:13px 26px;border-radius:100px;text-decoration:none;" class="hv14">Ver planes y precios →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLANES ============ -->
+  <section id="planes" style="max-width:1240px;margin:0 auto;padding:96px 32px;">
+    <div data-reveal="" style="text-align:center;margin-bottom:52px;">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;letter-spacing:-.02em;color:#fff;margin:0 0 12px;">El plan perfecto para cada etapa de tu negocio</h2>
+      <p style="font-size:17px;color:#8a91a5;margin:0 0 22px;">Empieza con lo esencial y potencia tu plan con inteligencia artificial cuando quieras.</p>
+      <div style="display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(34,211,238,.28);background:rgba(34,211,238,.06);border-radius:100px;padding:9px 18px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2.2"><path d="M20 6L9 17l-5-5"></path></svg>
+        <span style="font-size:13.5px;color:#a8d8e6;">Precios claros desde el inicio. Sin cotizaciones sorpresa.</span>
+      </div>
+    </div>
+    <div data-reveal="" data-r="plans" style="display:grid;grid-template-columns:1fr 1fr 1.06fr;gap:20px;align-items:stretch;">
+
+      <!-- PLAN 1 · PRESENCIA WEB -->
+      <div style="border:1px solid rgba(255,255,255,.09);border-radius:20px;background:rgba(255,255,255,.02);padding:34px 30px;display:flex;flex-direction:column;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#8b93ab;margin-bottom:6px;">PLAN ESENCIAL</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:#fff;">Presencia Web</div>
+        <div style="font-size:13px;color:#8a91a5;line-height:1.55;margin:8px 0 22px;">Para negocios que quieren arrancar con una página profesional.</div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:26px;">
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Página web profesional adaptada a celular</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Sección de inicio con foto o carrusel de tu negocio</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Sección "Sobre nosotros" para generar confianza</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Galería de fotos de tu trabajo o de tus clientes</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Ubicación con mapa y horario de atención</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Integración de botón WhatsApp</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Textos comerciales orientados a conversión</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Cambios de textos, fotos y precios incluidos</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Certificado de seguridad SSL (candado)</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Optimizada para carga rápida en móviles</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Dominio gratis el primer año</div>
+        </div>
+        <div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid rgba(255,255,255,.08);padding:20px 0 22px;">
+          <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Setup inicial</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;color:#fff;">$4,900 <span style="font-size:12px;font-weight:500;color:#8a91a5;">MXN</span></div><div style="font-size:11px;color:#6b7288;margin-top:3px;">Pago único · incluye 1 mes de mantenimiento web</div></div>
+          <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Mantenimiento</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;color:#fff;">$490 <span style="font-size:12px;font-weight:500;color:#8a91a5;">/ mes</span></div><div style="font-size:11px;color:#6b7288;margin-top:3px;">A partir del 2do mes</div></div>
+        </div>
+        <div style="border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:11px 13px;margin-bottom:20px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#8b93ab;margin-bottom:6px;">QUÉ INCLUYE EL MANTENIMIENTO</div>
+          <div style="font-size:12px;color:#9aa2b8;line-height:1.55;">Cambios a tu sitio web: textos, fotos y precios. Hasta 3 solicitudes al mes. No incluye rediseño, secciones nuevas ni gestión de redes.</div>
+        </div>
+        <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:block;text-align:center;border:1px solid rgba(255,255,255,.2);color:#fff;font-weight:600;font-size:15px;padding:14px;border-radius:100px;text-decoration:none;" class="hv15">Contratar Plan Esencial →</a>
+      </div>
+
+      <!-- PLAN 2 · REDES SOCIALES -->
+      <div style="border:1px solid rgba(255,255,255,.09);border-radius:20px;background:rgba(255,255,255,.02);padding:34px 30px;display:flex;flex-direction:column;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#8b93ab;margin-bottom:6px;">PLAN PROFESIONAL</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:#fff;"><span style="color:#22d3ee;">+</span> Redes Sociales</div>
+        <div style="font-size:13px;color:#8a91a5;line-height:1.55;margin:8px 0 22px;">Tu página web y tus redes activas, con 3 meses de acompañamiento incluidos.</div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:26px;">
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Todo lo del Plan Esencial</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Configuración de Instagram Business</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Configuración de Facebook empresarial</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Vinculación Instagram + Facebook + WhatsApp</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Bio optimizada y botón de contacto directo</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Ajustes mensuales de tus perfiles durante 3 meses</div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Tarjeta digital con QR para compartir tu contacto y pedir reseñas</div>
+        </div>
+        <div style="display:flex;gap:8px;background:rgba(236,72,153,.07);border:1px solid rgba(236,72,153,.22);border-radius:10px;padding:10px 12px;margin-bottom:22px;font-size:12px;color:#f0abcf;line-height:1.5;">¿Quieres publicaciones de contenido cada mes? <a href="#impulso-social" style="color:#f9a8d4;font-weight:600;text-decoration:none;white-space:nowrap;">Súmalo con Impulso Social →</a></div>
+        <div style="display:flex;align-items:center;gap:8px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.3);border-radius:10px;padding:9px 12px;margin-bottom:22px;font-size:12px;color:#7dd3fc;">💰 Ahorras $1,449 frente a contratar cada servicio por separado</div>
+        <div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid rgba(255,255,255,.08);padding:20px 0 22px;">
+          <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Setup inicial</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;color:#fff;">$8,900 <span style="font-size:12px;font-weight:500;color:#8a91a5;">MXN</span></div><div style="font-size:11px;color:#6b7288;margin-top:3px;">Pago único · incluye 3 meses de mantenimiento web y de redes</div></div>
+          <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Mantenimiento</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;color:#fff;">$690 <span style="font-size:12px;font-weight:500;color:#8a91a5;">/ mes</span></div><div style="font-size:11px;color:#6b7288;margin-top:3px;">A partir del 4to mes</div></div>
+        </div>
+        <div style="border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:11px 13px;margin-bottom:20px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#8b93ab;margin-bottom:6px;">QUÉ INCLUYE EL MANTENIMIENTO</div>
+          <div style="font-size:12px;color:#9aa2b8;line-height:1.55;">Cambios a tu sitio web: textos, fotos y precios. Hasta 3 solicitudes al mes. No incluye rediseño ni secciones nuevas. En redes, los ajustes de perfil incluidos no contemplan publicaciones de contenido.</div>
+        </div>
+        <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:block;text-align:center;border:1px solid rgba(255,255,255,.2);color:#fff;font-weight:600;font-size:15px;padding:14px;border-radius:100px;text-decoration:none;" class="hv16">Contratar Plan Profesional →</a>
+      </div>
+
+      <!-- PLAN 3 · PAQUETE COMPLETO -->
+      <div style="position:relative;border-radius:22px;padding:2px;background:linear-gradient(140deg,#8b5cf6,#22d3ee);box-shadow:0 24px 80px rgba(139,92,246,.28);">
+        <div style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(100deg,#8b5cf6,#22d3ee);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;font-weight:600;padding:6px 16px;border-radius:100px;white-space:nowrap;z-index:2;">★ MÁS COMPLETO</div>
+        <div style="border-radius:20px;background:linear-gradient(170deg,#12101f,#0a1420);padding:34px 30px;display:flex;flex-direction:column;height:100%;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#a78bfa;margin-bottom:6px;">PLAN PREMIUM</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:#fff;">Paquete Completo Digital</div>
+          <div style="font-size:13px;color:#9aa2b8;line-height:1.55;margin:8px 0 22px;">Presencia digital completa desde el primer día, con SEO local para que te encuentren primero en Google Maps.</div>
+          <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:20px;">
+            <div style="display:flex;gap:9px;font-size:14px;color:#dde2ee;"><span style="color:#22d3ee;">✓</span> Todo lo del Plan Esencial (Página web)</div>
+            <div style="display:flex;gap:9px;font-size:14px;color:#dde2ee;"><span style="color:#22d3ee;">✓</span> Todo lo del Plan Profesional (redes sociales + tarjeta digital con QR)</div>
+            <div style="display:flex;gap:9px;font-size:14px;color:#dde2ee;"><span style="color:#22d3ee;">✓</span> SEO Local &amp; Google Maps durante 3 meses: perfil de Google optimizado, fotos, categorías, directorios y reporte mensual</div>
+            <div style="display:flex;gap:9px;font-size:14px;color:#dde2ee;"><span style="color:#22d3ee;">✓</span> Ajustes mensuales de tus redes durante 6 meses</div>
+            <div style="display:flex;gap:9px;font-size:14px;color:#dde2ee;"><span style="color:#22d3ee;">✓</span> Sitio completo + blog</div>
+            <div style="display:flex;gap:9px;font-size:14px;color:#dde2ee;"><span style="color:#22d3ee;">✓</span> Diseño con identidad de marca</div>
+            <div style="display:flex;gap:9px;font-size:14px;color:#dde2ee;"><span style="color:#22d3ee;">✓</span> Botones y enlaces a tus redes sociales</div>
+          </div>
+          <div style="display:flex;gap:8px;background:rgba(34,211,238,.07);border:1px solid rgba(34,211,238,.22);border-radius:10px;padding:10px 12px;margin-bottom:20px;font-size:12px;color:#9fd8e8;line-height:1.5;">¿Quieres seguir con SEO y redes al terminar los meses incluidos? <a href="#seo-local" style="color:#7dd3fc;font-weight:600;text-decoration:none;">Continúa con SEO Local o Impulso Social →</a></div>
+          <div style="display:flex;align-items:center;gap:8px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.3);border-radius:10px;padding:9px 12px;margin-bottom:20px;font-size:12px;color:#7dd3fc;">💰 Ahorras $2,889 frente a contratar cada servicio por separado</div>
+          <div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid rgba(255,255,255,.1);padding:20px 0 22px;">
+            <div><div style="font-size:11px;color:#9aa2b8;margin-bottom:4px;">Setup inicial</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;color:#fff;">$16,900 <span style="font-size:12px;font-weight:500;color:#9aa2b8;">MXN</span></div><div style="font-size:11px;color:#6b7288;margin-top:3px;">Pago único · incluye 6 meses de mantenimiento web y de redes, y 3 de SEO Local</div></div>
+            <div><div style="font-size:11px;color:#9aa2b8;margin-bottom:4px;">Mantenimiento</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;color:#fff;">$990 <span style="font-size:12px;font-weight:500;color:#9aa2b8;">/ mes</span></div><div style="font-size:11px;color:#6b7288;margin-top:3px;">A partir del 7mo mes</div></div>
+          </div>
+          <div style="border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:11px 13px;margin-bottom:20px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;color:#9aa2b8;margin-bottom:6px;">QUÉ INCLUYE EL MANTENIMIENTO</div>
+            <div style="font-size:12px;color:#a8b0c4;line-height:1.55;">Cambios a tu sitio web: textos, fotos y precios. Hasta 3 solicitudes al mes. No incluye rediseño ni secciones nuevas. En redes, los ajustes de perfil incluidos no contemplan publicaciones de contenido.</div>
+          </div>
+          <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:block;text-align:center;background:linear-gradient(100deg,#8b5cf6,#22d3ee);color:#fff;font-weight:600;font-size:15px;padding:15px;border-radius:100px;text-decoration:none;" class="hv17">Contratar Plan Premium →</a>
+        </div>
+      </div>
+    </div>
+    <div data-reveal="" style="display:flex;align-items:center;justify-content:center;gap:9px;margin-top:28px;font-size:14px;color:#8a91a5;">
+      <span style="color:#22d3ee;">✓</span> Todos los planes incluyen soporte por WhatsApp. Sin plazos forzosos.
+    </div>
+
+    <!-- ===== COMPLEMENTOS DE IA ===== -->
+    <div data-reveal="" style="margin-top:104px;padding-top:64px;border-top:1px solid rgba(255,255,255,.07);">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;">
+        <span style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;background:linear-gradient(100deg,#8b5cf6,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;">✦ POTENCIA TU PLAN</span>
+      </div>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:26px;flex-wrap:wrap;gap:10px;max-width:820px;margin-left:auto;margin-right:auto;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;letter-spacing:-.02em;color:#fff;margin:0;max-width:430px;">Servicios y complementos que suman a tu plan</h3>
+        <p style="font-size:14px;color:#8a91a5;margin:0;max-width:360px;">Elige el que te interese para ver qué incluye y su precio. Los de IA se configuran una vez y quedan trabajando solos, 24/7.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-bottom:26px;">
+        <button type="button" class="addon-tab" data-tab="seo" style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;font-weight:600;padding:10px 17px;border-radius:100px;cursor:pointer;transition:all .25s;white-space:nowrap;flex-shrink:0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);color:#c9cede;">SEO Local &amp; Maps</button>
+        <button type="button" class="addon-tab" data-tab="ads" style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;font-weight:600;padding:10px 17px;border-radius:100px;cursor:pointer;transition:all .25s;white-space:nowrap;flex-shrink:0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);color:#c9cede;">Google Ads</button>
+        <button type="button" class="addon-tab" data-tab="wa" style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;font-weight:600;padding:10px 17px;border-radius:100px;cursor:pointer;transition:all .25s;white-space:nowrap;flex-shrink:0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);color:#c9cede;">Asistente IA en WhatsApp</button>
+        <button type="button" class="addon-tab" data-tab="soc" style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;font-weight:600;padding:10px 17px;border-radius:100px;cursor:pointer;transition:all .25s;white-space:nowrap;flex-shrink:0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);color:#c9cede;">Redes Sociales</button>
+        <button type="button" class="addon-tab" data-tab="rev" style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;font-weight:600;padding:10px 17px;border-radius:100px;cursor:pointer;transition:all .25s;white-space:nowrap;flex-shrink:0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);color:#c9cede;">Reseñas con IA</button>
+      </div>
+      <div data-r="addons" style="max-width:820px;margin:0 auto;min-height:640px;">
+
+        <!-- 1 · SEO LOCAL & GOOGLE MAPS (ancla) -->
+        <div id="seo-local" data-addon="seo" data-dsp="block" style="position:relative;border-radius:20px;padding:1.5px;background:linear-gradient(150deg,rgba(34,211,238,.5),rgba(139,92,246,.35));scroll-margin-top:90px;">
+          <div style="border-radius:19px;background:linear-gradient(170deg,#0d1420,#0a1017);padding:30px;display:flex;flex-direction:column;height:100%;">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+            <div style="width:50px;height:50px;border-radius:14px;border:1px solid rgba(34,211,238,.4);background:rgba(34,211,238,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.6"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
+            </div>
+            <div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;color:#fff;">SEO Local &amp; Google Maps</div>
+              <div style="font-size:13px;color:#7dd3fc;font-weight:600;">Que te encuentren primero</div>
+            </div>
+          </div>
+          <div style="font-size:14px;color:#9aa2b8;line-height:1.6;margin-bottom:18px;">Aparece en el mapa y en el Top 3 cuando te buscan en tu zona. Configuramos y posicionamos tu Perfil de Google para que los clientes te encuentren antes que a la competencia.</div>
+          <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:22px;">
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Perfil de Google + verificación oficial</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Fotos de tus proyectos y categorías correctas</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Ajustes SEO al sitio + alta en directorios</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Reporte mensual de desempeño</div>
+          </div>
+          <div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid rgba(255,255,255,.1);padding:18px 0 20px;">
+            <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Configuración</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;color:#fff;">$2,000 <span style="font-size:11px;font-weight:500;color:#8a91a5;">MXN</span></div></div>
+            <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Mensualidad</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;color:#fff;">$1,200 <span style="font-size:11px;font-weight:500;color:#8a91a5;">/ mes</span></div><div style="font-size:11px;color:#6b7288;margin-top:3px;">Permanencia mín. 3 meses</div></div>
+          </div>
+          <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:block;text-align:center;background:linear-gradient(100deg,#8b5cf6,#22d3ee);color:#fff;font-weight:600;font-size:14px;padding:13px;border-radius:100px;text-decoration:none;" class="hv18">Quiero aparecer primero →</a>
+          </div>
+        </div>
+
+        <!-- 2 · ASISTENTE IA EN WHATSAPP (dos niveles) -->
+        <div id="impulso-responde" data-addon="wa" data-dsp="flex" style="border:1px solid rgba(139,92,246,.3);border-radius:20px;background:linear-gradient(160deg,rgba(139,92,246,.07),rgba(34,211,238,.03));padding:30px;scroll-margin-top:90px;display:flex;flex-direction:column;">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+            <div style="width:50px;height:50px;border-radius:14px;border:1px solid rgba(139,92,246,.4);background:rgba(139,92,246,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="1.6"><path d="M12 2a2 2 0 012 2v1h1a4 4 0 014 4v1a2 2 0 012 2 2 2 0 01-2 2v1a4 4 0 01-4 4H7a4 4 0 01-4-4v-1a2 2 0 01-2-2 2 2 0 012-2V9a4 4 0 014-4h1V4a2 2 0 012-2z"></path><circle cx="9" cy="13" r="1" fill="#c4b5fd"></circle><circle cx="15" cy="13" r="1" fill="#c4b5fd"></circle></svg>
+            </div>
+            <div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;color:#fff;">Asistente IA en WhatsApp</div>
+              <div style="font-size:13px;color:#a78bfa;font-weight:600;">"Impulso Responde"</div>
+            </div>
+          </div>
+          <div style="font-size:14px;color:#9aa2b8;line-height:1.6;margin-bottom:18px;">Deja de perseguir curiosos: el asistente atiende a todos, separa a quien sí va a comprar y te pasa solo esas conversaciones. Elige el nivel de acompañamiento que necesitas.</div>
+          <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:22px;">
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Responde al instante 24/7, incluso fuera de horario</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Precalifica: te avisa solo cuando vale tu tiempo</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Filtra y clasifica prospectos</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Agenda citas y envía tu catálogo</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Entrenado con la info de tu negocio</div>
+          </div>
+          <!-- tabla dos niveles -->
+          <div style="margin-top:auto;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;margin-bottom:18px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <div style="border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;background:rgba(255,255,255,.02);">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8a91a5;margin-bottom:8px;">BÁSICO</div>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:#fff;">$2,400</div>
+                <div style="font-size:11px;color:#6b7288;margin-bottom:8px;">configuración</div>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#fff;">$999<span style="font-size:11px;font-weight:500;color:#8a91a5;">/mes</span></div>
+                <div style="font-size:11px;color:#8a91a5;line-height:1.45;margin-top:8px;">Funciona solo, sin ajustes.</div>
+              </div>
+              <div style="border:1px solid rgba(139,92,246,.45);border-radius:12px;padding:14px;background:rgba(139,92,246,.09);">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#c4b5fd;margin-bottom:8px;">GESTIONADO</div>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:#fff;">$2,400</div>
+                <div style="font-size:11px;color:#6b7288;margin-bottom:8px;">configuración</div>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#fff;">$1,500<span style="font-size:11px;font-weight:500;color:#8a91a5;">/mes</span></div>
+                <div style="font-size:11px;color:#c9cede;line-height:1.45;margin-top:8px;">+ Ajuste mensual de respuestas y revisión de conversaciones.</div>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:block;text-align:center;border:1px solid rgba(139,92,246,.5);color:#fff;font-weight:600;font-size:14px;padding:13px;border-radius:100px;text-decoration:none;" class="hv19">Agregar a mi plan →</a>
+        </div>
+
+        <!-- 3 · RESEÑAS CON IA (add-on ligero) -->
+        <div id="impulso-resenas" data-addon="rev" data-dsp="flex" style="border:1px solid rgba(34,211,238,.3);border-radius:20px;background:linear-gradient(160deg,rgba(34,211,238,.06),rgba(139,92,246,.03));padding:30px;scroll-margin-top:90px;display:flex;flex-direction:column;">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+            <div style="width:50px;height:50px;border-radius:14px;border:1px solid rgba(34,211,238,.4);background:rgba(34,211,238,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.6"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8-6.1-3.5-6.1 3.5 1.4-6.8L2.2 9l6.9-.7z"></path></svg>
+            </div>
+            <div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;color:#fff;">Reseñas con IA</div>
+              <div style="font-size:13px;color:#7dd3fc;font-weight:600;">"Impulso Reseñas" · add-on</div>
+            </div>
+          </div>
+          <div style="font-size:14px;color:#9aa2b8;line-height:1.6;margin-bottom:18px;">La capa de IA que construye tu reputación: pide reseñas por WhatsApp tras cada servicio y responde automáticamente a las positivas. Se suma a tu SEO Local o a cualquier plan.</div>
+          <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:22px;">
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Solicitud de reseñas automática por WhatsApp</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Respuesta con IA a reseñas positivas</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Alerta inmediata a ti si llega una negativa</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Cero gestión de tu parte una vez activo</div>
+          </div>
+          <div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid rgba(255,255,255,.08);padding:18px 0 20px;">
+            <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Configuración</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;color:#fff;">$1,150 <span style="font-size:11px;font-weight:500;color:#8a91a5;">MXN</span></div></div>
+            <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Mensualidad</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;color:#fff;">$800 <span style="font-size:11px;font-weight:500;color:#8a91a5;">/ mes</span></div></div>
+          </div>
+          <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:block;text-align:center;border:1px solid rgba(34,211,238,.5);color:#fff;font-weight:600;font-size:14px;padding:13px;border-radius:100px;text-decoration:none;" class="hv20">Agregar a mi plan →</a>
+        </div>
+
+        <!-- 4 · IMPULSO ADS (Google Ads Local) -->
+        <div id="impulso-ads" data-addon="ads" data-dsp="flex" style="border:1px solid rgba(245,158,11,.3);border-radius:20px;background:linear-gradient(160deg,rgba(245,158,11,.08),rgba(245,158,11,.02));padding:30px;scroll-margin-top:90px;display:flex;flex-direction:column;">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+            <div style="width:50px;height:50px;border-radius:14px;border:1px solid rgba(245,158,11,.4);background:rgba(245,158,11,.13);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.6"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+            </div>
+            <div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;color:#fff;">Google Ads Local</div>
+              <div style="font-size:13px;color:#fbbf24;font-weight:600;">"Impulso Ads"</div>
+            </div>
+          </div>
+          <div style="font-size:14px;color:#9aa2b8;line-height:1.6;margin-bottom:18px;">Que te encuentren cuando alguien ya está buscando activamente lo que vendes, en tu zona.</div>
+          <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:22px;">
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Cuenta y campañas de búsqueda configuradas</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Seguimiento de llamadas y formularios</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Optimización semanal de pujas y palabras clave</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Reporte mensual de clics, leads y costo por lead</div>
+          </div>
+          <div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid rgba(255,255,255,.08);padding:18px 0 8px;">
+            <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Configuración</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;color:#fff;">$2,990 <span style="font-size:11px;font-weight:500;color:#8a91a5;">MXN</span></div></div>
+            <div><div style="font-size:11px;color:#8a91a5;margin-bottom:4px;">Mensualidad</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;color:#fff;">$2,990 <span style="font-size:11px;font-weight:500;color:#8a91a5;">/ mes</span></div></div>
+          </div>
+          <div style="font-size:11px;color:#6b7288;line-height:1.5;margin-bottom:18px;">No incluye el presupuesto de pauta (mín. recomendado $3,000–5,000/mes, pagado directo a Google).</div>
+          <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:block;text-align:center;border:1px solid rgba(245,158,11,.5);color:#fff;font-weight:600;font-size:14px;padding:13px;border-radius:100px;text-decoration:none;" class="hv21">Quiero más clientes con Ads →</a>
+        </div>
+
+        <!-- 5 · IMPULSO SOCIAL (dos niveles) -->
+        <div id="impulso-social" data-addon="soc" data-dsp="flex" style="border:1px solid rgba(236,72,153,.3);border-radius:20px;background:linear-gradient(160deg,rgba(236,72,153,.07),rgba(139,92,246,.03));padding:30px;display:flex;flex-direction:column;scroll-margin-top:90px;">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+            <div style="width:50px;height:50px;border-radius:14px;border:1px solid rgba(236,72,153,.4);background:rgba(236,72,153,.13);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f9a8d4" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17" cy="7" r="1" fill="#f9a8d4"></circle></svg>
+            </div>
+            <div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;color:#fff;">Redes Sociales</div>
+              <div style="font-size:13px;color:#f9a8d4;font-weight:600;">"Impulso Social" · dos niveles</div>
+            </div>
+          </div>
+          <div style="font-size:14px;color:#9aa2b8;line-height:1.6;margin-bottom:18px;max-width:640px;">Tu marca activa en Instagram y Facebook todos los días, sin que tú tengas que estar pendiente. Nosotros diseñamos, publicamos y respondemos — tú solo ves llegar los mensajes a tu WhatsApp.</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px 28px;margin-bottom:22px;">
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Perfiles profesionales vinculados entre sí y a tu WhatsApp</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Diseño hecho a la medida de tu marca, no plantillas genéricas</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Calendario de contenido planeado mes a mes</div>
+            <div style="display:flex;gap:9px;font-size:13px;color:#c9cede;"><span style="color:#22d3ee;">✓</span> Un solo equipo: la misma marca en tu web, redes y WhatsApp</div>
+          </div>
+          <div style="margin-top:auto;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;margin-bottom:14px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <div style="border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px;background:rgba(255,255,255,.02);">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8a91a5;margin-bottom:8px;">ESENCIAL</div>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:#fff;">$1,100</div>
+                <div style="font-size:11px;color:#6b7288;margin-bottom:8px;">configuración</div>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#fff;">$790<span style="font-size:11px;font-weight:500;color:#8a91a5;">/mes</span></div>
+                <div style="display:flex;flex-direction:column;gap:6px;margin-top:12px;">
+                  <div style="display:flex;gap:7px;font-size:12px;color:#9aa2b8;line-height:1.4;"><span style="color:#f9a8d4;">·</span> Configuración de Instagram y Facebook Business</div>
+                  <div style="display:flex;gap:7px;font-size:12px;color:#9aa2b8;line-height:1.4;"><span style="color:#f9a8d4;">·</span> Bio optimizada y vinculación a WhatsApp</div>
+                  <div style="display:flex;gap:7px;font-size:12px;color:#9aa2b8;line-height:1.4;"><span style="color:#f9a8d4;">·</span> Ajustes mensuales de perfil</div>
+                  <div style="display:flex;gap:7px;font-size:12px;color:#6b7288;line-height:1.4;"><span>·</span> Sin publicaciones de contenido</div>
+                </div>
+              </div>
+              <div style="border:1px solid rgba(236,72,153,.4);border-radius:12px;padding:16px;background:rgba(236,72,153,.09);">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#f9a8d4;margin-bottom:8px;">PROFESIONAL</div>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:#fff;">$2,100</div>
+                <div style="font-size:11px;color:#6b7288;margin-bottom:8px;">configuración</div>
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#fff;">$2,690<span style="font-size:11px;font-weight:500;color:#8a91a5;">/mes</span></div>
+                <div style="display:flex;flex-direction:column;gap:6px;margin-top:12px;">
+                  <div style="display:flex;gap:7px;font-size:12px;color:#c9cede;line-height:1.4;"><span style="color:#f9a8d4;">·</span> Todo lo de Esencial, incluido</div>
+                  <div style="display:flex;gap:7px;font-size:12px;color:#c9cede;line-height:1.4;"><span style="color:#f9a8d4;">·</span> 8–12 publicaciones al mes con diseño propio</div>
+                  <div style="display:flex;gap:7px;font-size:12px;color:#c9cede;line-height:1.4;"><span style="color:#f9a8d4;">·</span> Respuesta a mensajes y comentarios</div>
+                  <div style="display:flex;gap:7px;font-size:12px;color:#c9cede;line-height:1.4;"><span style="color:#f9a8d4;">·</span> Reporte mensual de alcance e interacción</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size:11px;color:#6b7288;line-height:1.5;margin-bottom:18px;">No incluye producción de fotografía/video profesional ni pauta paga en Meta Ads — se cotizan aparte si los necesitas.</div>
+          <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:block;text-align:center;border:1px solid rgba(236,72,153,.5);color:#fff;font-weight:600;font-size:14px;padding:13px;border-radius:100px;text-decoration:none;" class="hv22">Agregar a mi plan →</a>
+        </div>
+      </div>
+
+      <!-- EXTRAS DE BAJO MANTENIMIENTO -->
+      <div style="max-width:820px;margin:22px auto 0;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.02);padding:26px 30px;">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:18px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#fff;">Extras de bajo mantenimiento</div>
+          <div style="font-size:13px;color:#8a91a5;">Pago único · ideales para combinar con cualquier plan</div>
+        </div>
+        <div data-r="extras" style="display:grid;grid-template-columns:1fr 1fr;gap:10px 40px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+            <span style="font-size:14px;color:#c9cede;">Tarjeta digital (vCard / QR)</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#7dd3fc;white-space:nowrap;">$999</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+            <span style="font-size:14px;color:#c9cede;">Catálogo digital para WhatsApp</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#7dd3fc;white-space:nowrap;">$1,500</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+            <span style="font-size:14px;color:#c9cede;">Micrositio de campaña</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#7dd3fc;white-space:nowrap;">$3,500</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+            <span style="font-size:14px;color:#c9cede;">Recordatorios automáticos de servicio</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#7dd3fc;white-space:nowrap;">$1,000 + $600/mes</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+            <span style="font-size:14px;color:#c9cede;">Auditoría de presencia digital (por entrega)</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#7dd3fc;white-space:nowrap;">$1,990 c/entrega</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CASOS ============ -->
+  <section id="casos" style="background:#080a12;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);">
+    <div style="max-width:1240px;margin:0 auto;padding:72px 32px;">
+      <div data-reveal="" style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;">
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.22em;color:#8b93ab;margin-bottom:12px;">NUESTRO TRABAJO</div>
+          <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:38px;letter-spacing:-.02em;color:#fff;margin:0 0 8px;">Sitios que hemos creado</h2>
+          <p style="font-size:15px;color:#8a91a5;margin:0;">Proyectos reales diseñados y desarrollados por Impulso Digital.</p>
+        </div>
+        <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:#e6e9f0;font-weight:500;font-size:14px;padding:12px 22px;border:1px solid rgba(255,255,255,.18);border-radius:100px;text-decoration:none;white-space:nowrap;" class="hv23">Quiero mi sitio →</a>
+      </div>
+      <div data-reveal="" data-r="cases" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;">
+        <a href="https://systemlaza.com.mx/" target="_blank" style="text-decoration:none;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.02);overflow:hidden;display:block;transition:border-color .25s,transform .25s;" class="hv24">
+          <img src="caso-systemlaza.jpg" alt="Systemlaza" style="display:block;width:100%;height:190px;object-fit:cover;border-bottom:1px solid rgba(255,255,255,.08);">
+          <div style="padding:20px 22px 24px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7dd3fc;margin-bottom:8px;">SEGURIDAD INDUSTRIAL</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Systemlaza</div>
+            <div style="font-size:13px;color:#8a91a5;line-height:1.6;margin-bottom:16px;">Sitio profesional para especialistas en sistemas de seguridad industrial en Monterrey, con portafolio de proyectos y captación por WhatsApp.</div>
+            <span style="font-size:13px;font-weight:600;color:#a78bfa;">Visitar sitio →</span>
+          </div>
+        </a>
+        <a href="https://www.nordicasecurity.com/" target="_blank" style="text-decoration:none;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.02);overflow:hidden;display:block;transition:border-color .25s,transform .25s;" class="hv25">
+          <img src="caso-nordicasec.jpg" alt="Nórdica Security" style="display:block;width:100%;height:190px;object-fit:cover;border-bottom:1px solid rgba(255,255,255,.08);">
+          <div style="padding:20px 22px 24px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7dd3fc;margin-bottom:8px;">CIBERSEGURIDAD</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Nórdica Security</div>
+            <div style="font-size:13px;color:#8a91a5;line-height:1.6;margin-bottom:16px;">Plataforma de diagnóstico de seguridad con reportes ejecutivos: “ve el riesgo antes de que ocurra”, con niveles de servicio claros.</div>
+            <span style="font-size:13px;font-weight:600;color:#a78bfa;">Visitar sitio →</span>
+          </div>
+        </a>
+        <a href="https://www.nordicatechnologyadvisory.com/" target="_blank" style="text-decoration:none;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.02);overflow:hidden;display:block;transition:border-color .25s,transform .25s;" class="hv26">
+          <img src="caso-nordicaadv.jpg" alt="Nórdica Technology Advisory" style="display:block;width:100%;height:190px;object-fit:cover;border-bottom:1px solid rgba(255,255,255,.08);">
+          <div style="padding:20px 22px 24px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#7dd3fc;margin-bottom:8px;">CONSULTORÍA TI</div>
+            <div style="font-weight:600;font-size:17px;color:#fff;margin-bottom:8px;">Nórdica Technology Advisory</div>
+            <div style="font-size:13px;color:#8a91a5;line-height:1.6;margin-bottom:16px;">Sitio corporativo para una boutique de gobernanza tecnológica enfocada en la dirección general de empresas en crecimiento.</div>
+            <span style="font-size:13px;font-weight:600;color:#a78bfa;">Visitar sitio →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIO ============ -->
+  
+
+  <!-- ============ CTA FINAL ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:0 32px 84px;">
+    <div data-reveal="" data-r="cta" style="border-radius:22px;background:linear-gradient(120deg,#2e1065,#164e63);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between;gap:32px;padding:44px 48px;">
+      <div style="display:flex;align-items:center;gap:24px;">
+        <div style="width:58px;height:58px;border-radius:16px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M4.5 19.5L21 12 4.5 4.5l3 7.5-3 7.5z"></path><path d="M7.5 12H21"></path></svg>
+        </div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:#fff;margin-bottom:6px;">¿Listo para llenar tu agenda de clientes?</div>
+          <div style="font-size:15px;color:#c7d2e2;">Hablemos de tu proyecto y diseñemos la estrategia perfecta para ti.</div>
+        </div>
+      </div>
+      <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:#fff;color:#12102a;font-weight:600;font-size:16px;padding:16px 30px;border-radius:100px;text-decoration:none;white-space:nowrap;box-shadow:0 8px 30px rgba(0,0,0,.35);" class="hv27">Agenda una asesoría gratuita →</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="border-top:1px solid rgba(255,255,255,.07);background:#04050a;">
+    <div style="max-width:1240px;margin:0 auto;padding:36px 32px 0;">
+      <div style="display:flex;align-items:center;justify-content:center;gap:34px;flex-wrap:wrap;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.06);">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:#565d72;width:100%;text-align:center;margin-bottom:2px;">TECNOLOGÍAS Y HERRAMIENTAS QUE UTILIZAMOS</span>
+        <span style="font-size:13px;font-weight:600;color:#6b7288;">WordPress</span>
+        <span style="font-size:13px;font-weight:600;color:#6b7288;">Elementor</span>
+        <span style="font-size:13px;font-weight:600;color:#6b7288;">WooCommerce</span>
+        <span style="font-size:13px;font-weight:600;color:#6b7288;">Google Analytics</span>
+        <span style="font-size:13px;font-weight:600;color:#6b7288;">Google Ads</span>
+        <span style="font-size:13px;font-weight:600;color:#6b7288;">Meta Business Suite</span>
+        <span style="font-size:13px;font-weight:600;color:#6b7288;">WhatsApp Business</span>
+        <span style="font-size:13px;font-weight:600;color:#6b7288;">Cloudflare</span>
+      </div>
+      <div data-r="foot" style="display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1.4fr;gap:32px;padding:44px 0 36px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <img src="logo-icon.png" alt="Impulso Digital" style="width:38px;height:38px;display:block;">
+            <img src="logo-wordmark.png" alt="Impulso Digital" style="height:26px;width:auto;display:block;">
+          </div>
+          <div style="font-size:13px;color:#8a91a5;line-height:1.6;margin-bottom:18px;">Impulsamos negocios al siguiente nivel digital.</div>
+          <div style="display:flex;gap:10px;">
+            <a href="https://facebook.com/somosimpulsodigital.mx" target="_blank" style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;" class="hv28">
+              <svg width="32" height="32" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="#1877F2"></circle><path d="M24.5 18h-4v10.9c4.4-.65 8-4.3 8-9.4 0-6.6-5.4-12-12-12S4.5 12.9 4.5 19c0 5.1 3.6 8.75 8 9.4V21h-3v-3h3v-2.3c0-3.3 2-5.1 4.9-5.1 1.4 0 2.6.1 3 .15V13.5h-2.05c-1.6 0-2.35 1.1-2.35 2.5V18h-2.7" fill="none"></path><path d="M20.5 21h3.5l.6-3h-4.1v-1.6c0-1.55.95-2.6 2.55-2.6H24V10.9c-.4-.05-1.6-.15-3-.15-2.9 0-4.9 1.8-4.9 5.1V18h-3v3h3v7.4c.75.15 1.5.25 2.3.25.5 0 1.05-.05 1.55-.15V21z" fill="#fff"></path></svg>
+            </a>
+            <a href="https://instagram.com/somosimpulsodigital.mx" target="_blank" style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;" class="hv29">
+              <svg width="32" height="32" viewBox="0 0 36 36"><defs><linearGradient id="igf" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEE411"></stop><stop offset=".2" stop-color="#FB5005"></stop><stop offset=".6" stop-color="#E1003C"></stop><stop offset="1" stop-color="#7C1FD1"></stop></linearGradient></defs><rect x="1.5" y="1.5" width="33" height="33" rx="9" fill="url(#igf)"></rect><rect x="9.5" y="9.5" width="17" height="17" rx="5.5" fill="none" stroke="#fff" stroke-width="2"></rect><circle cx="18" cy="18" r="4.6" fill="none" stroke="#fff" stroke-width="2"></circle><circle cx="24.2" cy="11.8" r="1.3" fill="#fff"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#8b93ab;margin-bottom:16px;">NAVEGACIÓN</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="#servicios" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv30">Servicios</a>
+            <a href="#planes" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv31">Planes</a>
+            <a href="#casos" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv32">Casos de éxito</a>
+            <a href="#proceso" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv33">Nosotros</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#8b93ab;margin-bottom:16px;">SERVICIOS</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="#servicios" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv34">Sitios Web</a>
+            <a href="#servicios" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv35">Tiendas en Línea</a>
+            <a href="#servicios" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv36">SEO</a>
+            <a href="#servicios" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv37">Publicidad Digital</a>
+            <a href="#servicios" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv38">Redes Sociales</a>
+            <a href="#servicios" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv39">Automatización</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#8b93ab;margin-bottom:16px;">RECURSOS</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="#top" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv40">Blog</a>
+            <a href="#top" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv41">Guías</a>
+            <a href="#top" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv42">Preguntas Frecuentes</a>
+            <a href="#top" style="font-size:13px;color:#8a91a5;text-decoration:none;" class="hv43">Herramientas</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#8b93ab;margin-bottom:16px;">HABLEMOS</div>
+          <div style="font-size:13px;color:#8a91a5;line-height:1.6;margin-bottom:14px;">Agenda una asesoría gratuita y recibe una estrategia personalizada.</div>
+          <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#fff;font-weight:600;font-size:13px;padding:11px 18px;border-radius:100px;text-decoration:none;margin-bottom:16px;" class="hv44">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#25d366"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5 13.9c-.2.6-1.2 1.1-1.7 1.2-.4 0-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .8-.3 1.5z"></path></svg>
+            Escríbenos por WhatsApp
+          </a>
+          <div style="font-size:13px;color:#8a91a5;margin-bottom:6px;">contacto@impulsodigitalmx.net</div>
+          <div style="font-size:13px;color:#8a91a5;">+52 222 188 8741</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.06);padding:20px 0 24px;font-size:12px;color:#565d72;">
+        <span>© 2026 Impulso Digital. Todos los derechos reservados.</span>
+        <div style="display:flex;gap:24px;"><span>Aviso de privacidad</span><span>Términos y condiciones</span></div>
+        <span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  
+    <a href="https://wa.me/522221888741?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita." target="_blank" style="position:fixed;right:28px;bottom:28px;z-index:60;width:58px;height:58px;border-radius:50%;background:#0e1a14;border:1px solid rgba(37,211,102,.5);display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 34px rgba(37,211,102,.3);animation:floatY 5s ease-in-out infinite;" class="hv45">
+      <svg width="27" height="27" viewBox="0 0 24 24" fill="#25d366"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5 13.9c-.2.6-1.2 1.1-1.7 1.2-.4 0-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .8-.3 1.5z"></path></svg>
+    </a>
+  
+
+</div>
+
+<script>
+(function(){
+  var imgs=[].slice.call(document.querySelectorAll('[data-hero]')),
+      inds=[].slice.call(document.querySelectorAll('[data-ind]')),
+      dots=[].slice.call(document.querySelectorAll('[data-dot]')),
+      labs=[].slice.call(document.querySelectorAll('[data-lab]')),
+      tf=[['scale(1.06)','scale(1.02)'],['translateX(-25px) scale(1.06)','translateX(0) scale(1.04)'],['translateY(-20px) scale(1.06)','translateY(0) scale(1.04)']],
+      ON='linear-gradient(100deg,#8b5cf6,#22d3ee)',OFF='rgba(255,255,255,.28)',GLOW='0 0 12px rgba(124,92,255,.9)',h=0;
+  function paint(){
+    imgs.forEach(function(el,i){el.style.opacity=i===h?1:0;el.style.transform=tf[i][i===h?0:1];});
+    inds.forEach(function(el,i){el.style.opacity=i===h?1:.4;});
+    dots.forEach(function(el,i){el.style.background=i===h?ON:OFF;el.style.boxShadow=i===h?GLOW:'none';});
+    labs.forEach(function(el,i){el.style.color=i===h?'#c9cede':'#6b7288';});
+  }
+  if(imgs.length===3) setInterval(function(){h=(h+1)%3;paint();},6000);
+  if(!('IntersectionObserver' in window)) return;
+  var els=[].slice.call(document.querySelectorAll('[data-reveal]'));
+  els.forEach(function(el){el.style.opacity=0;el.style.transform='translateY(26px)';el.style.transition='opacity .7s ease, transform .7s ease';});
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='translateY(0)';io.unobserve(e.target);}});},{threshold:.12});
+  els.forEach(function(el){io.observe(el);});
+  var m=document.getElementById('metric-48');
+  if(m){m.textContent='$0';
+    var mio=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){mio.unobserve(e.target);
+      var st=performance.now();
+      (function tick(now){var p=Math.min((now-st)/1400,1),ea=1-Math.pow(1-p,3);m.textContent='$'+Math.round(ea*2889).toLocaleString('en-US');if(p<1)requestAnimationFrame(tick);})(st);
+    }});},{threshold:.6});
+    mio.observe(m);}
+})();</script>
+<script>
+(function(){
+  var cards=[].slice.call(document.querySelectorAll('[data-addon]'));
+  var tabs=[].slice.call(document.querySelectorAll('.addon-tab'));
+  if(!cards.length||!tabs.length)return;
+  var HASH={'#seo-local':'seo','#impulso-ads':'ads','#impulso-responde':'wa','#impulso-social':'soc','#impulso-resenas':'rev'};
+  function set(k,scroll){
+    cards.forEach(function(c){c.style.display=c.getAttribute('data-addon')===k?c.getAttribute('data-dsp'):'none';});
+    tabs.forEach(function(t){var on=t.getAttribute('data-tab')===k;
+      t.style.background=on?'linear-gradient(100deg,#8b5cf6,#22d3ee)':'rgba(255,255,255,.03)';
+      t.style.borderColor=on?'transparent':'rgba(255,255,255,.16)';
+      t.style.color=on?'#fff':'#9aa2b8';});
+    if(scroll){var g=document.querySelector('[data-r="addons"]');
+      if(g)window.scrollTo({top:g.getBoundingClientRect().top+window.pageYOffset-160,behavior:'smooth'});}
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){set(t.getAttribute('data-tab'),true);});});
+  window.addEventListener('hashchange',function(){var k=HASH[location.hash];if(k)set(k,true);});
+  set(HASH[location.hash]||'seo',false);
+})();
+</script>
+</body>
+</html>
